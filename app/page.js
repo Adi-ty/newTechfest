@@ -1,7 +1,19 @@
-import { Inter } from "@next/font/google";
+import About from "../sections/About";
+import Explore from "../sections/Explore";
+import Hero from "../sections/Hero";
+import Insights from "../sections/Insights";
+import WhatsNew from "../sections/WhatsNew";
+import World from "../sections/World";
 
-const inter = Inter({ subsets: ["latin"] });
+const Page = () => (
+  <div>
+    <Hero />
+    <About />
+    <Explore />
+    <WhatsNew />
+    <World />
+    <Insights />
+  </div>
+);
 
-export default function Home() {
-  return <div>Home Page</div>;
-}
+export default Page;

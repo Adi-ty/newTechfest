@@ -1,20 +1,18 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import "../styles/global.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import "../styles/globals.css";
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>
+const RootLayout = ({ children }) => (
+  <html lang="en">
+    <head />
+    <body>
+      <div className="bg-primary-black overflow-hidden">
         <Navbar />
         {children}
         <Footer />
-      </body>
-    </html>
-  );
-}
+      </div>
+    </body>
+  </html>
+);
+
+export default RootLayout;
