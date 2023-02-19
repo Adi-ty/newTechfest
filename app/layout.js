@@ -7,9 +7,9 @@ const RootLayout = ({ children }) => (
     <head />
     <body>
       <div className="bg-primary-black overflow-hidden">
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </body>
   </html>

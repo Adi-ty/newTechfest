@@ -9,10 +9,10 @@ const Page = () => (
   <div>
     <Hero />
     <About />
-    <Explore />
+    {/* <Explore />
     <WhatsNew />
     <World />
-    <Insights />
+    <Insights /> */}
   </div>
 );
 
