@@ -13,8 +13,11 @@ const Page = () => (
       <div className="gradient-03 z-0" />
       <Explore />
     </div>
-    <WhatsNew />
-    <World />
+    <div className="relative">
+      <WhatsNew />
+      <div className="gradient-04 z-0" />
+      <World />
+    </div>
     <Insights />
   </div>
 );
