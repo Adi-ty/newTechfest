@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { fadeIn } from "../utils/motion";
+import { AiFillGithub } from "react-icons/ai";
 
 const TeamMemberCard = ({
   name,
@@ -11,6 +12,7 @@ const TeamMemberCard = ({
   active,
   index,
   handleClick,
+  githubLink,
 }) => {
   return (
     <motion.div
@@ -38,11 +40,9 @@ const TeamMemberCard = ({
           <div
             className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
           >
-            <img
-              src="/favicon.ico"
-              alt="github"
-              className="w-1/2 h-1/2 object-contain"
-            />
+            <a href={githubLink}>
+              <AiFillGithub className="w-[50px] h-[50px] object-contain" />
+            </a>
           </div>
           <p className="font-normal text-[16px] leading-[20px] text-white uppercase">
             {title}

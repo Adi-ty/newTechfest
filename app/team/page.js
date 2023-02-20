@@ -11,26 +11,31 @@ const teamMembers = [
     name: "Aman Sharma",
     title: "Full Stack Developer",
     imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
+    githubLink: "https://github.com/lunchspider",
   },
   {
     name: "Aditya Singh",
     title: "Full Stack Developer",
     imageUrl: "/Devfest.jpg",
+    githubLink: "https://github.com/adi-ty",
   },
   {
     name: "Subhangi Dhasmana",
     title: "Full Stack Developer",
     imageUrl: "/subhangi.jpg",
+    githubLink: "https://github.com/SUBHANGI-DHASMANA",
   },
   {
     name: "Ayush Goyal",
     title: "Full Stack Developer",
     imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
+    githubLink: "https://github.com/ayuugoyal",
   },
   {
     name: "Ayush Gupta",
     title: "Full Stack Developer",
     imageUrl: "/ayushGupta.jpg",
+    githubLink: "https://github.com/ayushgupta4002",
   },
 ];
 

@@ -3,7 +3,6 @@ import Explore from "../sections/Explore";
 import Hero from "../sections/Hero";
 import Insights from "../sections/Insights";
 import WhatsNew from "../sections/WhatsNew";
-import World from "../sections/World";
 
 const Page = () => (
   <div>
@@ -16,9 +15,8 @@ const Page = () => (
     <div className="relative">
       <WhatsNew />
       <div className="gradient-04 z-0" />
-      <World />
+      <Insights />
     </div>
-    <Insights />
   </div>
 );
 
