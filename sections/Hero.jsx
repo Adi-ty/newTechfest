@@ -1,7 +1,7 @@
 "use client";
 import '../styles/Hero.css'
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion , useScroll} from "framer-motion";
 import styles from "../styles";
 import React, { useState, useEffect, useRef } from "react";
 import { staggerContainer, textVariant } from "../utils/motion";
@@ -98,17 +98,17 @@ const Hero = () => {
         </div>
       </div>
       </h2>
+  
 
 
-{/* 
-      <img src="/monutain_02.png" id="m2" />
+      <img src="/plants.png" id="m2" />
       
-      <img src="/mountains_front.png" id="m3" /> */}
+      {/* <img src="/mountains_front.png" id="m3" />  */}
 
 
-      <img src="/man.png" id="man" />
+      <img src="/man 1.png" id="man" />
       <img src="/plants.png" id="p1" />
-      {/* <img src="/grass.png" id="g1" /> */}
+       {/* <img src="/plants.png" id="p1" />  */}
       {/* <img src="/trees_02.png" id="m1" /> */}
       
       
