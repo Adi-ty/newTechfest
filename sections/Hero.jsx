@@ -85,37 +85,48 @@ const Hero = () => {
     <section className="parallax" ref={ref}>
 
 
-      <img src="/1876.jpg" id="m1" />
+      <img src="/3241.jpg" id="m1" />
       <h2 id="text">       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+        <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1  }}
+            transition={{ delay: 5,}}
           >
-            {heading}
+           <i>Intellect23</i> 
           </motion.span>
         </div>
       </div>
       </h2>
 
 
-
+{/* 
       <img src="/monutain_02.png" id="m2" />
       
-      <img src="/mountains_front.png" id="m3" />
+      <img src="/mountains_front.png" id="m3" /> */}
 
 
       <img src="/man.png" id="man" />
       <img src="/plants.png" id="p1" />
-      <img src="/trees_01.png" id="m1" />
+      {/* <img src="/grass.png" id="g1" /> */}
       {/* <img src="/trees_02.png" id="m1" /> */}
       
       
     
       
-      <motion.img src="/1234.jpg" id="b1"  animate={{scale:4 , opacity:0}} transition={{delay:3 , duration:2}}></motion.img>
-    
+      <motion.img src="/1234.jpg" id="b1"  animate={{scale:5 , opacity:0}} transition={{delay:3 , duration:2}}></motion.img>
+      <h2 id="text">       <div className="absolute inset-0 flex justify-center items-center">
+        <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
+          <motion.span
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 0 , scale:5 }}
+            transition={{ delay: 2, duration:2 }}
+          >
+            {heading}
+          </motion.span>
+        </div>
+      </div>
+      </h2>
      
 
 
