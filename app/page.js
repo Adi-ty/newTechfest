@@ -8,7 +8,7 @@ import World from "../sections/World";
 const Page = () => (
   <div>
     <Hero />
-    <About />
+    {/* <About /> */}
     {/* <Explore />
     <WhatsNew />
     <World />

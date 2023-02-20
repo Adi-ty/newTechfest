@@ -40,45 +40,45 @@ const Hero = () => {
   //     y: 200,
   //   })
 
-  useEffect(() => {
-    const element = ref.current;
+  // useEffect(() => {
+  //   const element = ref.current;
 
-    gsap.from(element.querySelector("#m3"), {
-      scrollTrigger: {
-        scrub: true,
+  //   gsap.from(element.querySelector("#m3"), {
+  //     scrollTrigger: {
+  //       scrub: true,
 
-      },
-      x: -400
+  //     },
+  //     x: -400
 
-    });
+  //   });
 
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
+  // }, []);
+  // useEffect(() => {
+  //   const element = ref.current;
 
-    gsap.from(element.querySelector("#m2"), {
-      scrollTrigger: {
-        scrub: true,
+  //   gsap.from(element.querySelector("#m2"), {
+  //     scrollTrigger: {
+  //       scrub: true,
 
-      },
-      x: 80
+  //     },
+  //     x: 80
 
-    });
+  //   });
 
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
+  // }, []);
+  // useEffect(() => {
+  //   const element = ref.current;
 
-    gsap.from(element.querySelector("#man"), {
-      scrollTrigger: {
-        scrub: true,
+  //   gsap.from(element.querySelector("#man"), {
+  //     scrollTrigger: {
+  //       scrub: true,
 
-      },
-      x: -5
+  //     },
+  //     x: -5
 
-    });
+  //   });
 
-  }, []);
+  // }, []);
 
   return (
     <div>
@@ -101,8 +101,8 @@ const Hero = () => {
 
 
 
-
       <img src="/monutain_02.png" id="m2" />
+      
       <img src="/mountains_front.png" id="m3" />
 
 
@@ -110,6 +110,12 @@ const Hero = () => {
       <img src="/plants.png" id="p1" />
       <img src="/trees_01.png" id="m1" />
       {/* <img src="/trees_02.png" id="m1" /> */}
+      
+      
+    
+      
+      <motion.img src="/1234.jpg" id="b1"  animate={{scale:4 , opacity:0}} transition={{delay:3 , duration:2}}></motion.img>
+    
      
 
 
