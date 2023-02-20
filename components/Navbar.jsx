@@ -1,16 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "../styles";
-import { navVariants } from "../utils/motion";
 
 const Navbar = () => (
-  <motion.nav
-    variants={navVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`${styles.xPaddings} py-8 relative}`}
+  <nav
+    className={`${styles.xPaddings} py-8 relative animate-navbar`}
   >
     <div className="gradient-02" />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +43,7 @@ const Navbar = () => (
         </div>
       </div>
     </div>
-  </motion.nav>
+  </nav>
 );
 
 export default Navbar;
