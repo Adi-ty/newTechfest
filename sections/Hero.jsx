@@ -1,5 +1,5 @@
 "use client";
-import '../styles/Hero.css'
+import "../styles/Hero.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../styles";
@@ -7,11 +7,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { staggerContainer, textVariant } from "../utils/motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Script from 'next/script'
-import About from './About';
+import Script from "next/script";
+import About from "./About";
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
-
   const ref = useRef(null);
   const [heading, setHeading] = useState("");
   const headings = [
@@ -82,63 +81,55 @@ const Hero = () => {
 
   return (
     <div>
-    <section className="parallax" ref={ref}>
+      <section className="parallax" ref={ref}>
+        {/* <img src="/3241.jpg" id="m1" /> */}
+        <h2 id="text">
+          {" "}
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
+              <motion.span
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 5 }}
+              >
+                <i className="text-6xl text-white">Alasiyan23</i>
+              </motion.span>
+            </div>
+          </div>
+        </h2>
 
-
-      <img src="/3241.jpg" id="m1" />
-      <h2 id="text">       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
-          <motion.span
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 1  }}
-            transition={{ delay: 5,}}
-          >
-           <i>Intellect23</i> 
-          </motion.span>
-        </div>
-      </div>
-      </h2>
-
-
-{/* 
+        {/* 
       <img src="/monutain_02.png" id="m2" />
       
       <img src="/mountains_front.png" id="m3" /> */}
 
+        <img src="/man.png" id="man" />
+        <img src="/plants.png" id="p1" />
+        {/* <img src="/grass.png" id="g1" /> */}
+        {/* <img src="/trees_02.png" id="m1" /> */}
 
-      <img src="/man.png" id="man" />
-      <img src="/plants.png" id="p1" />
-      {/* <img src="/grass.png" id="g1" /> */}
-      {/* <img src="/trees_02.png" id="m1" /> */}
-      
-      
-    
-      
-      <motion.img src="/1234.jpg" id="b1"  animate={{scale:5 , opacity:0}} transition={{delay:3 , duration:2}}></motion.img>
-      <h2 id="text">       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
-          <motion.span
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 0 , scale:5 }}
-            transition={{ delay: 2, duration:2 }}
-          >
-            {heading}
-          </motion.span>
-        </div>
-      </div>
-      </h2>
-     
-
-
-
-
-    </section>
-  
+        <motion.img
+          src="/1234.jpg"
+          id="b1"
+          animate={{ scale: 5, opacity: 0 }}
+          transition={{ delay: 3, duration: 2 }}
+        ></motion.img>
+        <h2 id="text">
+          {" "}
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
+              <motion.span
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 0, scale: 5 }}
+                transition={{ delay: 2, duration: 2 }}
+              >
+                {heading}
+              </motion.span>
+            </div>
+          </div>
+        </h2>
+      </section>
     </div>
-    
-
-
-
 
     // <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     //   <motion.div
@@ -170,7 +161,6 @@ const Hero = () => {
     // </div>
     //     </div>
     //   </motion.div>
-  
   );
 };
 

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-image: url("/3241.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 * {
   margin: 0;
   padding: 0;

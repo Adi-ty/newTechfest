@@ -6,8 +6,8 @@ const RootLayout = ({ children }) => (
   <html lang="en">
     <head />
     <body>
-      <div className="bg-primary-black overflow-hidden">
-        {/* <Navbar /> */}
+      <div className="overflow-hidden">
+        <Navbar />
         {children}
         {/* <Footer /> */}
       </div>
