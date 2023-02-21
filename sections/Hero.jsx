@@ -105,6 +105,7 @@ const Hero = () => {
 
         <img src="/lamp.png" id="man" />
         <img src="/lamp1.png" id="p1" />
+        <img src="/lamp1.png" id="p2" />
      {/* <img src="/bench.png" id="g1" /> */}
         {/* <img src="/trees_02.png" id="m1" /> */}
 
@@ -112,7 +113,7 @@ const Hero = () => {
           src="/1234.jpg"
           id="b1"
           animate={{ scale: 5, opacity: 0 }}
-          transition={{ delay: 3, duration: 2 }}
+          transition={{ delay: 3, duration: 2}}
         ></motion.img>
         <h2 id="text">
           {" "}

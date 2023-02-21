@@ -13,7 +13,7 @@ const Navbar = () => (
     viewport={{ once: true }}
     className={`${styles.xPaddings} py-8 relative}`}
   >
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" animate={{opacity:1 }} transition={{delay:4}} initial={{opacity:0, zIndex:10}} >
       <div className="flex items-center justify-between h-16">
         <div className="flex-shrink-0">
           <Link href="/" className="text-white text-2xl font-bold">
@@ -54,7 +54,7 @@ const Navbar = () => (
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   </motion.nav>
 );
 

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/globals.css";
 
+
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head />
