@@ -11,7 +11,7 @@ const Navbar = () => (
     initial="hidden"
     whileInView="show"
     viewport={{ once: true }}
-    className={`${styles.xPaddings} py-8 relative}`}
+    className={`${styles.xPaddings} py-2 relative}`}
   >
     <motion.div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" animate={{opacity:1 }} transition={{delay:4}} initial={{opacity:0, zIndex:10}} >
       <div className="flex items-center justify-between h-16">

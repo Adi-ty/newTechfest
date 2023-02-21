@@ -106,15 +106,21 @@ const Hero = () => {
         <img src="/lamp.png" id="man" />
         <img src="/lamp1.png" id="p1" />
         <img src="/lamp1.png" id="p2" />
-     {/* <img src="/bench.png" id="g1" /> */}
+        {/* <img src="/bench.png" id="g1" /> */}
         {/* <img src="/trees_02.png" id="m1" /> */}
 
         <motion.img
           src="/1234.jpg"
           id="b1"
-          animate={{ scale: 5, opacity: 0 }}
-          transition={{ delay: 3, duration: 2}}
+          initial={{ opacity: 1 }}
+          animate={{ scale: 10, opacity: 0 }}
+          transition={{
+            delay: 3, duration: 2, ease:"linear",
+            
+          }}
         ></motion.img>
+        <motion.img src="/fog.png" id="" animate={{ x: 600, opacity: 0.3 }} initial={{ opacity: 1 }} transition={{ duration: 3 }} ></motion.img>
+        <motion.img src="/fog.png" id="" animate={{ x: -600, opacity: 0.3 }} initial={{ opacity: 1 }} transition={{ duration: 3 }} ></motion.img>
         <h2 id="text">
           {" "}
           <div className="absolute inset-0 flex justify-center items-center">
@@ -122,9 +128,9 @@ const Hero = () => {
               <motion.span
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0, scale: 5 }}
-                transition={{ delay: 2, duration: 2 }}
+                transition={{ delay: 1, duration: 2 }}
               >
-                {heading}
+
               </motion.span>
             </div>
           </div>
