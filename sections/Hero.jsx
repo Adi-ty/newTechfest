@@ -15,12 +15,12 @@ const Hero = () => {
         </div>
       </div>
       </h2>
+  
 
 
-{/* 
-      <img src="/monutain_02.png" id="m2" />
+      <img src="/plants.png" id="m2" />
       
-      <img src="/mountains_front.png" id="m3" /> */}
+      {/* <img src="/mountains_front.png" id="m3" />  */}
 
 
       <img src="/man.png" className = "w-3/5 h-1/2 absolute bottom-0 left-0 pointer-events-none overflow-y-hidden"/>
