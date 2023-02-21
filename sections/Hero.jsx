@@ -92,7 +92,7 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 5 }}
               >
-                <i className="text-white">Alasiyan23</i>
+                <i className="text-white font"  >Alasiyan23</i>
               </motion.span>
             </div>
           </div>
@@ -103,9 +103,9 @@ const Hero = () => {
       
       <img src="/mountains_front.png" id="m3" /> */}
 
-        <img src="/man.png" id="man" />
-        <img src="/plants.png" id="p1" />
-        {/* <img src="/grass.png" id="g1" /> */}
+        <img src="/lamp.png" id="man" />
+        <img src="/lamp1.png" id="p1" />
+     {/* <img src="/bench.png" id="g1" /> */}
         {/* <img src="/trees_02.png" id="m1" /> */}
 
         <motion.img

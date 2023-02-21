@@ -22,7 +22,7 @@
     transform: translateY(-50%);
     font-size: 4em;}
 #man{
-    width: 55%;
+    width: 30%;
 }
 #m3{
     width: 55%;
@@ -34,9 +34,23 @@
 
 }
 #g1{
-    width: 4s0%;
+    width: 40%;
     height: 50%;
 }
 #m2{
     align-items: right;
+}
+.font{
+    font-family:'Courier New';
+}
+#p1{
+    height: 40%;
+    width: 30%;
+    align-self: flex-end;
+    align-items: end!important;
+    margin-left: 70%;
+}
+#b1{
+    height: 100%;
+    
 }
