@@ -1,7 +1,7 @@
 "use client";
 import "../styles/Hero.css";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import styles from "../styles";
 import React, { useState, useEffect, useRef } from "react";
 import { staggerContainer, textVariant } from "../utils/motion";
@@ -92,7 +92,7 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 5 }}
               >
-                <i className="text-6xl text-white">Alasiyan23</i>
+                <i className="text-white">Alasiyan23</i>
               </motion.span>
             </div>
           </div>
