@@ -1,100 +1,17 @@
-"use client";
 import '../styles/Hero.css'
-import Image from "next/image";
-import { motion } from "framer-motion";
-import styles from "../styles";
-import React, { useState, useEffect, useRef } from "react";
-import { staggerContainer, textVariant } from "../utils/motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Script from 'next/script'
-import About from './About';
-gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
-
-  const ref = useRef(null);
-  const [heading, setHeading] = useState("");
-  const headings = [
-    "Welcome",
-    "Namaste",
-    "Bonjour",
-    "Hola",
-    "Ciao",
-    "Konnichiwa",
-  ];
-
-  useEffect(() => {
-    let count = 0;
-    const interval = setInterval(() => {
-      setHeading(headings[count]);
-      count = (count + 1) % headings.length;
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // useEffect(()=>{
-  //   gsap.from("m1",{
-  //     scrollTrigger:{
-  //       scrub:true
-  //     },
-  //     y: 200,
-  //   })
-
-  // useEffect(() => {
-  //   const element = ref.current;
-
-  //   gsap.from(element.querySelector("#m3"), {
-  //     scrollTrigger: {
-  //       scrub: true,
-
-  //     },
-  //     x: -400
-
-  //   });
-
-  // }, []);
-  // useEffect(() => {
-  //   const element = ref.current;
-
-  //   gsap.from(element.querySelector("#m2"), {
-  //     scrollTrigger: {
-  //       scrub: true,
-
-  //     },
-  //     x: 80
-
-  //   });
-
-  // }, []);
-  // useEffect(() => {
-  //   const element = ref.current;
-
-  //   gsap.from(element.querySelector("#man"), {
-  //     scrollTrigger: {
-  //       scrub: true,
-
-  //     },
-  //     x: -5
-
-  //   });
-
-  // }, []);
-
+  const heading = "Welcome";
   return (
     <div>
-    <section className="parallax" ref={ref}>
+    <section className="relative flex justify-center h-screen">
 
-
-      <img src="/3241.jpg" id="m1" />
-      <h2 id="text">       <div className="absolute inset-0 flex justify-center items-center">
+      <img src="/3241.jpg" className = "animate-[fade-in_forwards_5s] object-fill h-screen w-screen absolute bottom-0 left-0 pointer-events-none overflow-y-hidden"/>
+      <h2 className = "absolute top-2/4 transform-[translateY(-50%)]">       
+        <div className="absolute inset-0 flex justify-center items-center">
         <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
-          <motion.span
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 1  }}
-            transition={{ delay: 5,}}
-          >
+          <span className = "animate-[fade-in_forwards_6s]">
            <i>Intellect23</i> 
-          </motion.span>
+          </span>
         </div>
       </div>
       </h2>
@@ -106,24 +23,21 @@ const Hero = () => {
       <img src="/mountains_front.png" id="m3" /> */}
 
 
-      <img src="/man.png" id="man" />
-      <img src="/plants.png" id="p1" />
+      <img src="/man.png" className = "w-3/5 h-1/2 absolute bottom-0 left-0 pointer-events-none overflow-y-hidden"/>
+      <img src="/plants.png" className = "w-full absolute bottom-0 left-0 pointer-events-none h-full overflow-y-hidden"/>
       {/* <img src="/grass.png" id="g1" /> */}
       {/* <img src="/trees_02.png" id="m1" /> */}
       
       
     
       
-      <motion.img src="/1234.jpg" id="b1"  animate={{scale:5 , opacity:0}} transition={{delay:3 , duration:2}}></motion.img>
-      <h2 id="text">       <div className="absolute inset-0 flex justify-center items-center">
+      <img src="/1234.jpg" className ="object-fill h-screen w-screen animate-[zoom-out-fade_5s_forwards]" ></img>
+      <h2 className = "absolute top-2/4 transform-[translateY(-50%)]">       
+          <div className="absolute inset-0 flex justify-center items-center">
         <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-black">
-          <motion.span
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 0 , scale:5 }}
-            transition={{ delay: 2, duration:2 }}
-          >
+          <span className = "animate-[zoom-out-fade_5s_forwards]">
             {heading}
-          </motion.span>
+          </span>
         </div>
       </div>
       </h2>

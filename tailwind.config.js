@@ -16,6 +16,17 @@ module.exports = {
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
       },
+      keyframes: {
+        'zoom-out-fade' : {
+            '0%' : { opacity : 1, transform: 'scale(1)'},
+            '50%' : { opacity : 0.5, transform: 'scale(2.5)'},
+            '100%' : { opacity : 0, transform: 'scale(5.0)'}
+          },
+          'fade-in' : {
+            '0%' : { opacity : 0 },
+            '100%' : { opacity : 1 },
+            }
+      }
     },
   },
   plugins: [],
