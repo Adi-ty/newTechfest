@@ -1,61 +1,97 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
-import Link from "next/link";
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import "../styles";
 
-const Navbar = () => (
-  <motion.nav
-    variants={navVariants}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true }}
-    className={`${styles.xPaddings} py-2 relative}`}
-  >
-    <motion.div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" animate={{opacity:1 }} transition={{delay:4}} initial={{opacity:0, zIndex:10}} >
-      <div className="flex items-center justify-between h-16">
-        <div className="flex-shrink-0">
-          <Link href="/" className="text-white text-2xl font-bold">
-            TechFest
-          </Link>
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('white');
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor('#ffffff');
+        setTextColor('#000000');
+      } else {
+        setColor('transparent');
+        setTextColor('#ffffff');
+      }
+    };
+    window.addEventListener('scroll', changeColor);
+  }, []);
+
+  return (
+
+    <div
+      style={{ backgroundColor: "#1A232E" }}
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+    >
+    <div className="gradient-02 z-20" />
+      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
+        <Link href='/'>
+          <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
+            Kalakritm
+          </h1>
+        </Link>
+        <ul style={{ color: `${textColor}` }} className='nav-btn hidden sm:flex'>
+          <li className='p-4'>
+            <Link href='/' className='active a-btn'>Home</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/#gallery' className='a-btn'>Contact Us</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/work' className='a-btn'>Events</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/contact' className='a-btn'>Slysian</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/contact' className='a-btn'>Team</Link>
+          </li>
+        </ul>
+
+        {/* Mobile Button */}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
         </div>
-        <div class="block md:hidden">
-    <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
-  </div>
-        <div className="hidden md:block">
-          <div className="ml-10 flex items-center space-x-4">
-            <Link
-              href="/events"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Events
-            </Link>
-            <Link
-              href="/hackathon"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Hackathon
-            </Link>
-            <Link
-              href="/team"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Team
-            </Link>
-            <Link
-              href="/contact"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Contact
-            </Link>
-          </div>
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/'>Home</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/#gallery'>Gallery</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/work'>Work</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/contact'>Contact</Link>
+            </li>
+          </ul>
         </div>
       </div>
-    </motion.div>
-  </motion.nav>
-);
+    </div>
+  );
+};
 
 export default Navbar;

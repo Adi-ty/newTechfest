@@ -118,3 +118,28 @@ body{
   background: #65c4fa;
   filter: blur(150px);
 }
+
+.a-btn{
+  color: grey;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.active{
+  color: #fff;
+    box-shadow: inset 0 0 5px #2d4898bf,
+        inset 0 0 10px #65c4fa,
+        inset 0 0 15px #d0c2f4;
+}
+
+.nav-btn li:hover a{
+  transition: all 0.3s linear;
+  color: #fff;
+    box-shadow: inset 0 0 5px #2d4898bf,
+        inset 0 0 10px #65c4fa,
+        inset 0 0 15px #d0c2f4;
+}
