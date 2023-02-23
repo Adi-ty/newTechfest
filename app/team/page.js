@@ -28,7 +28,7 @@ const teamMembers = [
   {
     name: "Ayush Goyal",
     title: "Full Stack Developer",
-    imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
+    imageUrl: "/Goyal.png",
     githubLink: "https://github.com/ayuugoyal",
   },
   {
