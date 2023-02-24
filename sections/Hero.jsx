@@ -9,6 +9,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Script from "next/script";
 import About from "./About";
+import Navbar from "../components/Navbar";
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   const ref = useRef(null);
@@ -92,10 +93,15 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 5 }}
               >
-                <i className="text-white font"  >Alasiyan23</i>
+                <h2 className="text-white font "  >Alasiyan'23</h2>
+                <h5 className="text-white font size "  >The Tech Never Submerges</h5>
+                
               </motion.span>
+             
             </div>
+            
           </div>
+    
         </h2>
 
         {/* 
@@ -104,10 +110,13 @@ const Hero = () => {
       <img src="/mountains_front.png" id="m3" /> */}
 
         <img src="/lamp.png" id="man" />
-        <img src="/lamp1.png" id="p1" />
+        
         <img src="/lamp1.png" id="p2" />
         {/* <img src="/bench.png" id="g1" /> */}
-        {/* <img src="/trees_02.png" id="m1" /> */}
+         <img src="/bottom.png" id="g1" /> 
+         <img src="/lamp.png" id="man" />
+         <img src="/lamp1.png" id="p1" />
+        
 
         <motion.img
           src="/1234.jpg"
@@ -132,10 +141,13 @@ const Hero = () => {
               >
 
               </motion.span>
+              
             </div>
           </div>
         </h2>
+       
       </section>
+     
     </div>
 
     // <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>

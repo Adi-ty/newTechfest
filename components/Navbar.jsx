@@ -1,9 +1,10 @@
 'use client';
-
+import { motion, useScroll } from "framer-motion";
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import "../styles";
+import "../styles/Hero.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -29,15 +30,35 @@ const Navbar = () => {
 
   return (
 
-    <div
-      style={{ backgroundColor: "#1A232E" }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+    <motion.div
+      style={{ 
+        background: "rgba(28, 9, 85, 0.55)",
+        borderRadius:"5px",
+        boxShadow:"0 4px 30px rgba(0, 0, 0, 0.1)",
+        backdropFilter:"blur(6px)",
+    
+      
+
+
+
+        }}
+      className='fixed left-4 top-1 right-4 z-10 ease-in duration-300'
+      initial={{y:-300}}
+      animate={{
+        y:0,
+        
+      }}
+      transition={{
+        duration:2,
+        delay:3.5,
+        ease:"easeIn"
+      }}
     >
-    <div className="gradient-02 z-20" />
+    <div className="z-20" />
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
-          <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-            Kalakritm
+          <h1 style={{ color: `${textColor}` }} className='font-bold text-3xl font' >
+          Alasiyan
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='nav-btn hidden sm:flex'>
@@ -90,7 +111,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
