@@ -19,7 +19,7 @@ const TeamMemberCard = ({
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
         active === name ? "lg-flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
-      } flex items-center justify-center min-w-[170px] h-[600px] transition-[flex] duration-[0.7s] 
+      } flex items-center justify-center min-w-[140px] h-[550px] transition-[flex] duration-[0.7s] 
       ease-out-flex cursor-pointer`}
       onClick={() => handleClick(name)}
     >
@@ -36,18 +36,18 @@ const TeamMemberCard = ({
           {name}
         </h3>
       ) : (
-        <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+        <div className="absolute bottom-0 p-4 justify-start w-full overflow-hidden flex-col bg-[rgba(0,0,0,0.5)] rounded-[24px]">
           <div
-            className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+            className={`${styles.flexCenter} w-[30px] h-[30px] rounded-[24px] glassmorphism mb-[16px]`}
           >
             <a href={githubLink}>
-              <AiFillGithub className="w-[50px] h-[50px] object-contain" />
+              <AiFillGithub className="w-[24px] h-[24px] object-contain" />
             </a>
           </div>
           <p className="font-normal text-[16px] leading-[20px] text-white uppercase">
             {title}
           </p>
-          <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+          <h2 className="mt-[12px] font-semibold sm:text-[32px] text-[24px] text-white">
             {name}
           </h2>
         </div>

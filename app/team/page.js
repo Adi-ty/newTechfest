@@ -37,23 +37,13 @@ const teamMembers = [
     imageUrl: "/ayushGupta.jpg",
     githubLink: "https://github.com/ayushgupta4002",
   },
+  {
+    name: "Chaitanya Rai",
+    title: "Full Stack Developer",
+    imageUrl: "/chaitanya.jpg",
+    githubLink: "https://github.com/Chaitanyarai899",
+  },
 ];
-
-// const Team = () => {
-//   return (
-//     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-//       {teamMembers.map((member) => (
-//         <TeamMemberCard
-//           key={member.name}
-//           name={member.name}
-//           title={member.title}
-//           imageUrl={member.imageUrl}
-//           description={member.description}
-//         />
-//       ))}
-//     </div>
-//   );
-// };
 
 const Team = () => {
   const [active, setActive] = useState("Aditya Singh");
