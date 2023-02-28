@@ -48,7 +48,7 @@ const Navbar = () => {
       }}
     >
       <div className="z-20" />
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+      <div className="flex items-center justify-between h-16">
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
