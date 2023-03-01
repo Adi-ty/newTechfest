@@ -43,6 +43,12 @@ const teamMembers = [
     imageUrl: "/chaitanya.jpg",
     githubLink: "https://github.com/Chaitanyarai899",
   },
+  {
+    name: "Taniska Jha",
+    title: "Full Stack Developer",
+    imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
+    githubLink: "abc",
+  },
 ];
 
 const Team = () => {

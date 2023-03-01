@@ -48,7 +48,7 @@ const Navbar = () => {
       }}
     >
       <div className="z-20" />
-      <div className="flex items-center justify-between h-16">
+      <div className="flex items-center justify-between p-2 h-16">
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
@@ -61,22 +61,22 @@ const Navbar = () => {
           style={{ color: `${textColor}` }}
           className="nav-btn hidden sm:flex"
         >
-          <li className="p-4">
+          <li className="p-2">
             <Link href="/events" className="a-btn">
               Events
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-2">
             <Link href="/hackathon" className="a-btn">
               HackEDCode
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-2">
             <Link href="/team" className="a-btn">
               Team
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-2">
             <Link href="/contact" className="a-btn">
               Contact Us
             </Link>
