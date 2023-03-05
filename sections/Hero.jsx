@@ -16,7 +16,13 @@ const Hero = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col `}
       >
-        <TitleText title={<>Elaysian'23</>} textStyles="text-center" />
+        <motion.img
+          src="/logo.png"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="w-96 h-96"
+        />
       </motion.div>
     </section>
   );
