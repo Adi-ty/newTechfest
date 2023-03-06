@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import styles from "./page.module.css";
 
 const Page = () => {
   const [name, setName] = useState("");
@@ -28,86 +29,12 @@ const Page = () => {
   };
 
   return (
-    <div className="contact-form">
-      <div className="contact-header">Contact Us</div>
-      <style jsx>{`
-        .contact-form {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin-left: 2rem;
-          width: 50%;
-          background-color: black;
-          padding: 2rem;
-          border-radius: 0;
-          box-sizing: border-box;
-        }
-        .contact-header {
-          margin-top: 0;
-          color: white;
-          font-size: 2rem;
-          font-weight: bold;
-          text-align: center;
-          margin-bottom: 2rem;
-          width: 100%; 
-        }
-        form {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          width: 100%;
-          box-sizing: border-box;
-        }
-        .form-field {
-          margin-bottom: 1rem;
-          width: 100%;
-        }
-        .field-label {
-          display: block;
-          font-size: 1rem;
-          font-weight: light;
-          color: white;
-          margin-bottom: 0.5rem;
-        }
-        .text-input {
-          width: 100%;
-          max-width: 500px;
-          padding: 0.5rem;
-          border-radius: 0;
-          border: 1px solid #ccc;
-          font-size: 1rem;
-        }
-        .submit-button {
-          margin-top: 1rem;
-          padding: 0.5rem 1rem;
-          border-radius: 0;
-          border: none;
-          background-color: purple;
-          color: white;
-          font-size: 1.2rem;
-          font-weight: bold;
-          cursor: pointer;
-        }
-        .map-container {
-          position: relative;
-          width: 50%;
-          height: 100%;
-        }
-        
-        .map {
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-        }
-        
-        
-      `}</style>
-      {status && <div className="status">{status}</div>}
+    <div className={styles.contactForm}>
+      <div className={styles.contactHeader}>Contact Us</div>
+      {status && <div className={styles.status}>{status}</div>}
       <form onSubmit={handleSubmit}>
-        <div className="form-field">
-          <label htmlFor="name" className="field-label">
+        <div className={styles.formField}>
+          <label htmlFor="name" className={styles.fieldLabel}>
             Name
           </label>
           <input
@@ -117,11 +44,11 @@ const Page = () => {
             onChange={(e) => setName(e.target.value)}
             required
             placeholder="Enter your name"
-            className="text-input"
+            className={styles.textInput}
           />
         </div>
-        <div className="form-field">
-          <label htmlFor="email" className="field-label">
+        <div className={styles.formField}>
+          <label htmlFor="email" className={styles.fieldLabel}>
             Email
           </label>
           <input
@@ -131,11 +58,11 @@ const Page = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email"
-            className="text-input"
+            className={styles.textInput}
           />
         </div>
-        <div className="form-field">
-          <label htmlFor="message" className="field-label">
+        <div className={styles.formField}>
+          <label htmlFor="message" className={styles.fieldLabel}>
             Message
           </label>
           <textarea
@@ -144,15 +71,14 @@ const Page = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
             placeholder="Enter your message"
-            className="text-input"
+            className={styles.textInput}
             rows="6"
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">
+        <button type="submit" className={styles.submitButton}>
           Submit
         </button>
       </form>
-
     </div>
   );
 };
