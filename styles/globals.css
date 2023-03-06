@@ -112,3 +112,51 @@ body{
   background: #65c4fa;
   filter: blur(150px);
 }
+
+/* Navbar */
+
+@font-face {
+  font-family: 'Iceland', cursive;
+  src: url('../public/font/Iceland-Regular.ttf');
+  /* font-weight: 400;
+  font-style: normal; */
+  }
+
+.fest-name{
+  background: linear-gradient(90.9deg, #00E0FF 7.88%, #0A4399 98.61%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-shadow: 7px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cllg{
+transform: rotate(-90deg);
+color: #fff;
+font-weight: 800;
+}
+
+.edc{
+  text-shadow: -1px 1px 0 #fff,
+                          1px 1px 0 #fff,
+                         1px -1px 0 #fff,
+                        -1px -1px 0 #fff;
+transform: rotate(-90deg);
+color: #29053B;
+font-family: 'Iceland';
+}
+
+/* About */
+
+/* .about{
+  background: linear-gradient(154.93deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 108.3%);
+backdrop-filter: blur(12.5px);
+}
+
+.gradient-01{
+  position: absolute;
+width: 835px;
+height: 1063px;
+z-index: 10;
+background: url(../public/ai4.png);
+} */

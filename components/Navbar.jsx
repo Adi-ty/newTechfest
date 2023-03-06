@@ -10,32 +10,38 @@ const Navbar = () => (
       <div className="flex items-center justify-between h-16">
         <div className="flex-shrink-0">
           <Link href="/" className="text-white text-2xl font-bold">
-            TechFest
+          ElySian23
           </Link>
         </div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-center space-x-4">
             <Link
-              href="/events"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              href="/"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
-              Events
+              Home
             </Link>
             <Link
-              href="/hackathon"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              href="/about"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
-              HackEDCode
+              About
             </Link>
             <Link
               href="/team"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
               Team
             </Link>
             <Link
+              href="/event"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
+            >
+              Event
+            </Link>
+            <Link
               href="/contact"
-              className="text-white hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
               Contact
             </Link>

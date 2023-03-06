@@ -7,7 +7,7 @@ import WhatsNew from "../sections/WhatsNew";
 const Page = () => (
   <div>
     <Hero />
-    <div className="relative ">
+    {/* <div className="relative ">
       <About />
       <div className="gradient-03 z-0" />
       <Explore />
@@ -16,7 +16,7 @@ const Page = () => (
       <WhatsNew />
       <div className="gradient-04 z-0" />
       <Insights />
-    </div>
+    </div> */}
   </div>
 );
 
