@@ -2,30 +2,28 @@ import Link from "next/link";
 import styles from "../styles";
 
 const Navbar = () => (
-  <nav
-    className={`${styles.xPaddings} py-8 relative animate-navbar`}
-  >
+  <nav className={`${styles.xPaddings} py-8 relative animate-navbar`}>
     <div className="gradient-02" />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between h-16">
         <div className="flex-shrink-0">
           <Link href="/" className="text-white text-2xl font-bold">
-          ElySian23
+            ElySian23
           </Link>
         </div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-center space-x-4">
             <Link
-              href="/"
+              href="/events"
               className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
-              Home
+              Events
             </Link>
             <Link
-              href="/about"
+              href="/hackathon"
               className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
-              About
+              HackEDCode
             </Link>
             <Link
               href="/team"
@@ -34,16 +32,10 @@ const Navbar = () => (
               Team
             </Link>
             <Link
-              href="/event"
-              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
-            >
-              Event
-            </Link>
-            <Link
               href="/contact"
               className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>
