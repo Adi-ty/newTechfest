@@ -91,23 +91,18 @@ function Page() {
               />
             </a>
             <a className="social-icon-link" href="#" id="itixd">
-              <img
+            <img
                 className="link-img image-block"
-                src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"
+                src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"
               />
             </a>
             <a className="social-icon-link" href="#" id="izxvt">
               <img
                 className="link-img image-block"
-                src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png"
+                src="https://www.freepnglogos.com/uploads/linkedin-social-media-logo-7.png"
               />
             </a>
-            <a className="social-icon-link" href="#" id="izldf-2-2">
-              <img
-                className="link-img image-block"
-                src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"
-              />
-            </a>
+           
           </div>
           <div class="map-box">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.828908855609!2d77.300448!3d28.664841100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb2d97ff9653%3A0xa236359e084edd43!2sGuru%20Gobind%20Singh%20Indraprastha%20University-%20East%20Delhi%20Campus!5e0!3m2!1sen!2sin!4v1678177978121!5m2!1sen!2sin"></iframe>
