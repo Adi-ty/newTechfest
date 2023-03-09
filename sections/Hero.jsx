@@ -21,8 +21,11 @@ const Hero = () => {
         <h1 className="edc flex text-[200px]">EDC</h1>
       </div>
       <div className="flex flex-col justify-center items-center text-center relative mb-64">
-        <h1 className="fest-name text-[130px]">ElySian23</h1>
-        <p className="fest-name text-3xl">Stay Tuned</p>
+        {/* <h1 className="fest-name text-[130px]">ElySian23</h1> */}
+        <img src="/mainName.png" alt="" />
+        <img src="/StayTune.png" className="pt-2 h-[30px] w-[320px]" alt="" />
+
+        {/* <p className="fest-name text-3xl">Stay Tuned</p> */}
       </div>
         <motion.img
           src="/robo.png"

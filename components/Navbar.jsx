@@ -8,7 +8,8 @@ const Navbar = () => (
       <div className="flex items-center justify-between h-16">
         <div className="flex-shrink-0">
           <Link href="/" className="text-white text-2xl font-bold">
-            ElySian23
+            {/* ElySian23 */}
+            <img src="/logo-bg.png" className="h-[85px] w-[85px]" alt="" />
           </Link>
         </div>
         <div className="hidden md:block">
@@ -23,7 +24,7 @@ const Navbar = () => (
               href="/hackathon"
               className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
             >
-              HackEDCode
+              hackEDCode
             </Link>
             <Link
               href="/team"
