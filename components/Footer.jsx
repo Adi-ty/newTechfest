@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from 'next/link';
+import Link from "next/link";
 import styles from "../styles";
 import { footerVariants } from "../utils/motion";
+import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => (
   <motion.footer
@@ -23,7 +24,7 @@ const Footer = () => (
           className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
         >
           <span className="font-normal text-[16px] text-white">
-          <Link href="/contact"> Contact Us </Link>
+            <Link href="/contact"> Contact Us </Link>
           </span>
         </button>
       </div>
@@ -37,7 +38,34 @@ const Footer = () => (
             Copyright © 2023 SDC. All rights reserved.
           </p>
 
-          <div className="flex gap-4"></div>
+          <div className="flex gap-4 z-20">
+            <div className="flex justify-center space-x-4">
+              <a
+                href="https://www.linkedin.com/in/ggsipuedc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-blue-700 transition-colors duration-300"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://twitter.com/SDC_USS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
+              >
+                <FaTwitter size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/elysian.edc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-red-500 transition-colors duration-300"
+              >
+                <FaInstagram size={24} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -3,27 +3,27 @@ import "../styles/loading.css";
 
 const Loading = () => {
   return (
-    <div>
-      <div class="boxes">
-        <div class="box">
+    <div className="min-h-screen w-screen">
+      <div className="boxes">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="box">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="box">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="box">
+        <div className="box">
           <div></div>
           <div></div>
           <div></div>

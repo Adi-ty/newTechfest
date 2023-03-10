@@ -34,7 +34,7 @@ const Navbar = () => (
             </Link>
             <Link
               href="/contact"
-              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium z-20"
             >
               Contact Us
             </Link>
