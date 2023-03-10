@@ -15,27 +15,28 @@ const Navbar = () => (
         <div className="hidden md:block">
           <div className="ml-10 flex items-center space-x-4">
             <Link
-              href="/events"
-              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
-            >
-              Events
+              href="/"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium">
+              Home
             </Link>
             <Link
               href="/hackathon"
-              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
-            >
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium">
               hackEDCode
             </Link>
             <Link
+              href="/events"
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium">
+              Events
+            </Link>
+            <Link
               href="/team"
-              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium"
-            >
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium">
               Team
             </Link>
             <Link
               href="/contact"
-              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium z-20"
-            >
+              className="text-white hover:text-[#00FFE0] px-3 py-2 rounded-md text-2xl font-medium">
               Contact Us
             </Link>
           </div>
