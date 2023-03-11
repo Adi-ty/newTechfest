@@ -79,11 +79,12 @@ const Navbar = () =>{
       <div
           className={
             nav
-              ? "z-40 sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-              : "z-40 sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+              ? "z-40 sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen backdrop-blur-[30px] text-center ease-in duration-300"
+              : "z-40 sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen backdrop-blur-[10px] text-center ease-in duration-300"
           }
         >
-          <ul>
+          <ul
+          >
             <li
               onClick={handleNav}
               className="p-4 z-50 text-4xl text-white hover:text-gray-500"
