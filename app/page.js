@@ -18,7 +18,7 @@ const Page = () => {
 
   return (
     <div>
-      {showGif &&  <center><img src="/0001.gif" alt=" GIF loading...." opacity="1" height="900" width="900"/></center>}
+      {showGif &&  <center><img src="/0001.gif" alt=" GIF loading...." height="900" width="900"/></center>}
       {!showGif && (
         <>
           <Hero />
