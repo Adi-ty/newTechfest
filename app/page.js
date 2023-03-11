@@ -5,7 +5,6 @@ import Explore from "../sections/Explore";
 import Hero from "../sections/Hero";
 import Insights from "../sections/Insights";
 import WhatsNew from "../sections/WhatsNew";
-import logo from "../public/0001.gif";
 
 const Page = () => {
   const [showGif, setShowGif] = useState(true);
@@ -13,13 +12,13 @@ const Page = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowGif(false);
-    }, 5000);
+    }, 10000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
-      {showGif && <img src={logo} alt=" GIF loading...." />}
+      {showGif &&  <center><img src="/0001.gif" alt=" GIF loading...." opacity="1" height="900" width="900"/></center>}
       {!showGif && (
         <>
           <Hero />
@@ -39,5 +38,7 @@ const Page = () => {
     </div>
   );
 };
+
+
 
 export default Page;
