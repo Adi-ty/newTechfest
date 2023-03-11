@@ -13,107 +13,148 @@ import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 
+const mentorsData1 = [
+  {
+    image: "/ayuuimgff.jpg",
+    name: "Ayush Goyal",
+    post: "Full Stack Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/ayuugoyal",
+    githubLink: "https://github.com/ayuugoyal",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/priyanshu.jpg",
+    name: "Priyanshu Singh",
+    post: "App Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/027_Priyanshu",
+    githubLink: "https://github.com/27priyanshu",
+    linkedinLink: "https://www.linkedin.com/in/priyanshu-singh-a30789200/",
+  },
+  {
+    image: "/Devfest.jpg",
+    name: "Aditya Singh",
+    post: "Full Stack Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/shuuubhhh/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+  },
+  {
+    image: "/shubh.jpg",
+    name: "Shubh Sardana",
+    post: "App Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/shuuubhhh/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+  },
+];
+const mentorsData2 = [
+  {
+    image: "/ayuuimgff.jpg",
+    name: "Ayush Goyal",
+    post: "MERN Stack Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/ayuugoyal",
+    githubLink: "https://github.com/ayuugoyal",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/subhangi.jpg",
+    name: "Subhangi Dhasmana",
+    post: "MERN Stack Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/shubh.jpg",
+    name: "Shubh Sardana",
+    post: "Flutter Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/shuuubhhh/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+  },
+  {
+    image: "/shubh.jpg",
+    name: "Shubh Sardana",
+    post: "Flutter Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/shuuubhhh/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+  },
+];
+const mentorsData3 = [
+  {
+    image: "/ayuuimgff.jpg",
+    name: "Ayush Goyal",
+    post: "MERN Stack Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/ayuugoyal",
+    githubLink: "https://github.com/ayuugoyal",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/subhangi.jpg",
+    name: "Subhangi Dhasmana",
+    post: "MERN Stack Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/shubh.jpg",
+    name: "Shubh Sardana",
+    post: "Flutter Developer",
+    org: "SDC USS",
+    instaLink: "https://www.instagram.com/shuuubhhh/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+  },
+];
+
+const trackdata1 = [
+  {
+    title: "Web 3.0",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+  },
+  {
+    title: "Open Innovation",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+  },
+  {
+    title: "AI/ML",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+  },
+];
+const trackdata2 = [
+  {
+    title: "Web 3.0",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+  },
+  {
+    title: "Web 3.0",
+    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+  },
+];
 const page = () => {
-  const mentorsData1 = [
-    {
-      image: "/ayuuimgff.jpg",
-      name: "Ayush Goyal",
-      post: "MERN Stack Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/ayuugoyal/",
-      twitterLink: "https://twitter.com/ayuugoyal",
-      githubLink: "https://github.com/ayuugoyal",
-      linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
-    },
-    {
-      image: "/subhangi.jpg",
-      name: "Subhangi Dhasmana",
-      post: "MERN Stack Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/ayuugoyal/",
-      twitterLink: "https://twitter.com/NotSoShubhhh",
-      githubLink: "https://github.com/shubhsardana29",
-      linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
-    },
-    {
-      image: "/shubh.jpg",
-      name: "Shubh Sardana",
-      post: "Flutter Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/shuuubhhh/",
-      twitterLink: "https://twitter.com/NotSoShubhhh",
-      githubLink: "https://github.com/shubhsardana29",
-      linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
-    },
-    {
-      image: "/Devfest.jpg",
-      name: "Aditya Singh",
-      post: "MERN Stack Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/shuuubhhh/",
-      twitterLink: "https://twitter.com/NotSoShubhhh",
-      githubLink: "https://github.com/shubhsardana29",
-      linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
-    },
-  ];
-  const mentorsData2 = [
-    {
-      image: "/ayuuimgff.jpg",
-      name: "Ayush Goyal",
-      post: "MERN Stack Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/ayuugoyal/",
-      twitterLink: "https://twitter.com/ayuugoyal",
-      githubLink: "https://github.com/ayuugoyal",
-      linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
-    },
-    {
-      image: "/subhangi.jpg",
-      name: "Subhangi Dhasmana",
-      post: "MERN Stack Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/ayuugoyal/",
-      twitterLink: "https://twitter.com/NotSoShubhhh",
-      githubLink: "https://github.com/shubhsardana29",
-      linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
-    },
-    {
-      image: "/shubh.jpg",
-      name: "Shubh Sardana",
-      post: "Flutter Developer",
-      org: "SDC",
-      instaLink: "https://www.instagram.com/shuuubhhh/",
-      twitterLink: "https://twitter.com/NotSoShubhhh",
-      githubLink: "https://github.com/shubhsardana29",
-      linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
-    },
-  ];
-
-  const trackdata1 = [
-    {
-      title: "Web 3.0",
-      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
-    },
-    {
-      title: "Open Innovation",
-      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
-    },
-    {
-      title: "AI/ML",
-      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
-    },
-  ];
-  const trackdata2 = [
-    {
-      title: "Web 3.0",
-      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
-    },
-    {
-      title: "Web 3.0",
-      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
-    },
-  ];
-
   const trackscard = (cd, index) => {
     return (
       <div className="p-10">
@@ -330,6 +371,14 @@ const page = () => {
           viewport={{ once: false, amount: 0.25 }}
           className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
           {mentorsData2.map(mentorCards)}
+        </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          {mentorsData3.map(mentorCards)}
         </motion.div>
       </div>
     </>
