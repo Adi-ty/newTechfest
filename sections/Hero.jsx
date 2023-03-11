@@ -14,8 +14,7 @@ const Hero = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col w-screen h-screen mt-4`}
-      >
+        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col w-screen h-screen mt-4`}>
         <div className="flex flex-row text-center absolute left-0 bottom-0 mb-16">
           <h2 className="cllg flex absolute bottom-0 left-[-50px] mb-16 text-6xl">
             GGSIPU

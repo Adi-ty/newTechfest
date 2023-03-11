@@ -14,14 +14,12 @@ const About = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col pt-2 p-20 backdrop-grayscale rounded-2xl`}
-    >
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col pt-2 p-20 backdrop-grayscale rounded-2xl`}>
       <TypingText title="| Elysian" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[4px] font-normal sm:text-[22px] text-[20px] text-center text-secondary-white"
-      >
+        className="mt-[4px] font-normal sm:text-[22px] text-[20px] text-center text-secondary-white">
         <span className="font-extrabold text-white">Elysian</span> The East
         Campus, GGSIPU is enthralled to host its first-ever annual Des-Tech fest
         (ELYSIAN'23) on 27th- 28th March 2023 at its very own celebrated, East

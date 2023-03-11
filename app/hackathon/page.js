@@ -11,9 +11,10 @@ import {
 } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const page = () => {
-  const mentorsData = [
+  const mentorsData1 = [
     {
       image: "/ayuuimgff.jpg",
       name: "Ayush Goyal",
@@ -55,10 +56,84 @@ const page = () => {
       linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
     },
   ];
+  const mentorsData2 = [
+    {
+      image: "/ayuuimgff.jpg",
+      name: "Ayush Goyal",
+      post: "MERN Stack Developer",
+      org: "SDC",
+      instaLink: "https://www.instagram.com/ayuugoyal/",
+      twitterLink: "https://twitter.com/ayuugoyal",
+      githubLink: "https://github.com/ayuugoyal",
+      linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    },
+    {
+      image: "/subhangi.jpg",
+      name: "Subhangi Dhasmana",
+      post: "MERN Stack Developer",
+      org: "SDC",
+      instaLink: "https://www.instagram.com/ayuugoyal/",
+      twitterLink: "https://twitter.com/NotSoShubhhh",
+      githubLink: "https://github.com/shubhsardana29",
+      linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    },
+    {
+      image: "/shubh.jpg",
+      name: "Shubh Sardana",
+      post: "Flutter Developer",
+      org: "SDC",
+      instaLink: "https://www.instagram.com/shuuubhhh/",
+      twitterLink: "https://twitter.com/NotSoShubhhh",
+      githubLink: "https://github.com/shubhsardana29",
+      linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+    },
+  ];
+
+  const trackdata1 = [
+    {
+      title: "Web 3.0",
+      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    },
+    {
+      title: "Open Innovation",
+      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    },
+    {
+      title: "AI/ML",
+      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    },
+  ];
+  const trackdata2 = [
+    {
+      title: "Web 3.0",
+      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    },
+    {
+      title: "Web 3.0",
+      desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    },
+  ];
+
+  const trackscard = (cd, index) => {
+    return (
+      <div className="p-10">
+        <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
+          {cd.title}
+        </h1>
+        <p className="text-white w-[25vw] text-center">{cd.desc}</p>
+      </div>
+    );
+  };
 
   const mentorCards = (card, index) => {
     return (
-      <div key={index} className="card">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        key={index}
+        className="card">
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
         <div className="grid-child-posts">{card.post}</div>
@@ -95,7 +170,7 @@ const page = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </motion.div>
     );
   };
 
@@ -103,7 +178,12 @@ const page = () => {
     <>
       <div>
         <div className="container items-center p-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row items-center">
-          <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden ">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden ">
             <TitleText
               title={
                 <>
@@ -118,12 +198,14 @@ const page = () => {
               }
               textStyles="text-center"
             />
-            <p className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left ">
+            <motion.p
+              variants={fadeIn("up", "tween", 0.2, 1)}
+              className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               consectetur optio unde saepe aliquam nesciunt illum ex? Quod
               voluptatem autem delectus quae sint, saepe porro cumque dolorum.
               Quos, atque harum!
-            </p>
+            </motion.p>
             <div className="flex items-center justify-center pt-4 ">
               <button
                 className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
@@ -131,17 +213,29 @@ const page = () => {
                 Register On Devfolio
               </button>
             </div>
-          </div>
-
-          <div className="w-full xl:w-2/5 p-10 overflow-hidden">
-            <img
+          </motion.div>
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className="w-full xl:w-2/5 p-10 overflow-hidden">
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
               className="animate relative rounded-2xl"
               src="/hacki.png"
               alt=""
             />
-          </div>
+          </motion.div>
         </div>
-        <div className="container items-center pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row items-center">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="container items-center pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row items-center">
           <TitleText
             title={
               <>
@@ -152,31 +246,67 @@ const page = () => {
             }
             textStyles="text-center"
           />
+
           <div
+            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              // paddingTop: "10vh",
+            }}>
+            {trackdata1.map(trackscard)}
+          </div>
+          <div
+            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              // paddingTop: "10vh",
+            }}>
+            {trackdata2.map(trackscard)}
+          </div>
+
+          {/* <div
             className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
             style={{
               display: "flex",
               justifyContent: "center",
               paddingTop: "10vh",
             }}>
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
               src="/Goyal.png"
               className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
+              alt=""
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
               src="/Goyal.png"
               className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
+              alt=""
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
               src="/Goyal.png"
               className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
+              alt=""
             />
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
               src="/Goyal.png"
               className="h-[140px] transform hover:scale-125 duration-300 ease-in-out"
+              alt=""
             />
-          </div>
-        </div>
+          </div> */}
+        </motion.div>
         <TitleText
           title={
             <>
@@ -186,9 +316,20 @@ const page = () => {
           textStyles="text-center"
         />
         <motion.div
-          variants={navVariants}
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
           className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
-          {mentorsData.map(mentorCards)}
+          {mentorsData1.map(mentorCards)}
+        </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          {mentorsData2.map(mentorCards)}
         </motion.div>
       </div>
     </>
