@@ -18,7 +18,7 @@ const Page = () => {
 
   return (
     <div>
-      {showGif &&  <center><img src="/0001.gif" alt=" GIF loading...." height="900" width="900"/></center>}
+      {showGif &&  <center><img src="/0001.gif" alt=" GIF loading...." height="650" width="650"/></center>}
       {!showGif && (
         <>
           <Hero />
@@ -38,7 +38,5 @@ const Page = () => {
     </div>
   );
 };
-
-
 
 export default Page;
