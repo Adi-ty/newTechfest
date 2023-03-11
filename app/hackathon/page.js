@@ -54,6 +54,16 @@ const page = () => {
       githubLink: "https://github.com/shubhsardana29",
       linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
     },
+    {
+      image: "/taniska.jpeg",
+      name: "Taniska Jha",
+      post: "MERN Stack Developer",
+      org: "SDC",
+      instaLink: "https://www.instagram.com/taniska_._jha/",
+      twitterLink: "https://twitter.com/Taniska_Jha",
+      githubLink: "https://github.com/TaniskaJha",
+      linkedinLink: "https://www.linkedin.com/in/taniska-jha-654b22229/",
+    },
   ];
 
   const mentorCards = (card, index) => {

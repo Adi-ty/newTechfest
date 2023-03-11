@@ -8,17 +8,18 @@ import { TitleText, TypingText } from "../../components/CustomTexts";
 
 const teamMembers = [
   {
-    name: "Aman Sharma",
-    title: "Full Stack Developer",
-    imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
-    githubLink: "https://github.com/lunchspider",
-  },
-  {
     name: "Aditya Singh",
     title: "Full Stack Developer",
     imageUrl: "/Devfest.jpg",
     githubLink: "https://github.com/adi-ty",
   },
+  {
+    name: "Aman Sharma",
+    title: "Full Stack Developer",
+    imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
+    githubLink: "https://github.com/lunchspider",
+  },
+
   {
     name: "Subhangi Dhasmana",
     title: "Full Stack Developer",
@@ -42,6 +43,12 @@ const teamMembers = [
     title: "Full Stack Developer",
     imageUrl: "/chaitanya.jpg",
     githubLink: "https://github.com/Chaitanyarai899",
+  },
+  {
+    name: "Taniska Jha",
+    title: "Full Stack Developer",
+    imageUrl: "/taniskajha.jpeg",
+    githubLink: "https://github.com/taniskajha",
   },
 ];
 
