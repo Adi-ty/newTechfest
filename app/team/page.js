@@ -78,7 +78,7 @@ const mentorsData1 = [
     name: "Ayush Gupta",
     post: "Web Team",
     // org: "SDC",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
+    instaLink: "https://www.instagram.com/_ayush_ftw/",
     twitterLink: "https://twitter.com/Ayush3241?t=kcXK364IwByDDG5K2R6lSA&s=09",
     githubLink: "https://github.com/ayushgupta4002",
     linkedinLink: "https://www.linkedin.com/in/ayush-gupta-253092227",
@@ -88,10 +88,10 @@ const mentorsData1 = [
     name: "Subhangi Dhasmana",
     post: "Web Team",
     // org: "SDC",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
+    instaLink: "https://www.instagram.com/subhangi_dhasmana/",
+    twitterLink: "https://twitter.com/SubhangiDhas",
     githubLink: "https://github.com/SUBHANGI-DHASMANA",
-    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+    linkedinLink: "https://www.linkedin.com/in/subhangi-dhasmana-04a911235/",
   },
 ];
 const mentorsData2 = [
@@ -100,21 +100,34 @@ const mentorsData2 = [
     name: "Chaitanya Rai",
     post: "Web Team",
     // org: "SDC",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/ayuugoyal",
-    githubLink: "https://github.com/ayuugoyal",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://www.instagram.com/chaitanya.rai/",
+    twitterLink: "#",
+    githubLink: "https://github.com/Chaitanyarai899",
+    linkedinLink: "https://www.linkedin.com/in/chaitanya-rai-369881102/",
+  },
+  {
+    image: "/tanishka.jpg",
+    name: "Taniska Jha",
+    post: "Web Team",
+    // org: "SDC",
+    instaLink: "https://www.instagram.com/taniska_._jha/",
+    twitterLink: "https://twitter.com/Taniska_Jha",
+    githubLink: "https://github.com/TaniskaJha",
+    linkedinLink: "https://www.linkedin.com/in/taniska-jha-654b22229/",
   },
   {
     image: "/default.png",
-    name: "Aman Gupta",
+    name: "Aman Sharma",
     post: "Web Team",
     // org: "SDC",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "#",
+    twitterLink: "#",
+    githubLink: "https://github.com/lunchspider",
+    linkedinLink: "#",
   },
+];
+
+const mentorsData3 = [
   {
     image: "/nidhikhana.jpg",
     name: "Nidhi Khana",
@@ -136,6 +149,7 @@ const mentorsData2 = [
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
   },
 ];
+
 const coreOrgData1 = [
   {
     image: "/abhishek.jpg",
@@ -293,6 +307,14 @@ const Team = () => {
           viewport={{ once: false, amount: 0.25 }}
           className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
           {mentorsData2.map(renderCards)}
+        </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          {mentorsData3.map(renderCards)}
         </motion.div>
       </div>
       <div>
