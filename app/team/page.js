@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 import { navVariants } from "../../utils/motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
-import "../../styles/team.css";
+import "../../styles/hack.css";
 
 // const teamMembers = [
 //   {
@@ -68,10 +68,10 @@ const mentorsData1 = [
     name: "Aditya Singh",
     post: "Web Head",
     // org: "SDC",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://instagram.com/i_am_adi_.02?igshid=YmMyMTA2M2Y=",
+    twitterLink: "https://twitter.com/AdityaS13082002",
+    githubLink: "https://github.com/Adi-ty",
+    linkedinLink: "https://www.linkedin.com/in/adityasingh----/",
   },
   {
     image: "/ayushGupta.jpg",
@@ -80,7 +80,7 @@ const mentorsData1 = [
     // org: "SDC",
     instaLink: "https://www.instagram.com/shuuubhhh/",
     twitterLink: "https://twitter.com/Ayush3241?t=kcXK364IwByDDG5K2R6lSA&s=09",
-    githubLink: "https://github.com/shubhsardana29",
+    githubLink: "https://github.com/ayushgupta4002",
     linkedinLink: "https://www.linkedin.com/in/ayush-gupta-253092227",
   },
   {
@@ -90,7 +90,7 @@ const mentorsData1 = [
     // org: "SDC",
     instaLink: "https://www.instagram.com/shuuubhhh/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
+    githubLink: "https://github.com/SUBHANGI-DHASMANA",
     linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
   },
 ];
@@ -109,6 +109,26 @@ const mentorsData2 = [
     image: "/default.png",
     name: "Aman Gupta",
     post: "Web Team",
+    // org: "SDC",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/nidhikhana.jpg",
+    name: "Nidhi Khana",
+    post: "UI/UX Team",
+    // org: "SDC",
+    instaLink: "https://www.instagram.com/ayuugoyal/",
+    twitterLink: "https://twitter.com/NotSoShubhhh",
+    githubLink: "https://github.com/shubhsardana29",
+    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+  },
+  {
+    image: "/aryan.jpg",
+    name: "Aryan Khandelwal",
+    post: "UI/UX Team",
     // org: "SDC",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/NotSoShubhhh",

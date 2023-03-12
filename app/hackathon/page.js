@@ -35,7 +35,7 @@ const mentorsData1 = [
     linkedinLink: "https://www.linkedin.com/in/priyanshu-singh-a30789200/",
   },
   {
-    image: "/Devfest.jpg",
+    image: "/aditya.jpg",
     name: "Aditya Singh",
     post: "Full Stack Developer",
     org: "SDC USS",
@@ -57,19 +57,19 @@ const mentorsData1 = [
 ];
 const mentorsData2 = [
   {
-    image: "/ayuuimgff.jpg",
-    name: "Ayush Goyal",
-    post: "MERN Stack Developer",
+    image: "/sarthak.jpg",
+    name: "Sarthak Agarwal",
+    post: "Database Administrator",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/ayuugoyal",
-    githubLink: "https://github.com/ayuugoyal",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://instagram.com/srthk03?igshid=ZDdkNTZiNTM=",
+    twitterLink: "https://twitter.com/srthk03?t=-8M5hYfnlV-vGLp2M2I7pQ&s=08",
+    githubLink: "https://github.com/Srthk03",
+    linkedinLink: "https://www.linkedin.com/in/sarthak-agarwal-202766226/",
   },
   {
     image: "/subhangi.jpg",
     name: "Subhangi Dhasmana",
-    post: "MERN Stack Developer",
+    post: "Full Stack Developer",
     org: "SDC USS",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
@@ -77,31 +77,41 @@ const mentorsData2 = [
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
   },
   {
-    image: "/shubh.jpg",
-    name: "Shubh Sardana",
-    post: "Flutter Developer",
+    image: "/ayushGupta.jpg",
+    name: "Ayush Gupta",
+    post: "Full Stack Developer",
     org: "SDC USS",
     instaLink: "https://www.instagram.com/shuuubhhh/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
+    twitterLink: "https://twitter.com/Ayush3241?t=kcXK364IwByDDG5K2R6lSA&s=09",
     githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+    linkedinLink: "https://www.linkedin.com/in/ayush-gupta-253092227",
   },
   {
-    image: "/shubh.jpg",
-    name: "Shubh Sardana",
-    post: "Flutter Developer",
+    image: "/avnish.jpg",
+    name: "Avanish Raj",
+    post: "App Developer",
     org: "SDC USS",
     instaLink: "https://www.instagram.com/shuuubhhh/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+    twitterLink: "https://twitter.com/raj_054",
+    githubLink: "https://github.com/avanishraj",
+    linkedinLink: "https://www.linkedin.com/in/avanish-r-69965b124/",
   },
 ];
 const mentorsData3 = [
   {
-    image: "/ayuuimgff.jpg",
-    name: "Ayush Goyal",
-    post: "MERN Stack Developer",
+    image: "/tanishka.jpg",
+    name: "Taniska Jha",
+    post: "Full Stack Developer",
+    org: "SDC",
+    instaLink: "https://www.instagram.com/taniska_._jha/",
+    twitterLink: "https://twitter.com/Taniska_Jha",
+    githubLink: "https://github.com/TaniskaJha",
+    linkedinLink: "https://www.linkedin.com/in/taniska-jha-654b22229/",
+  },
+  {
+    image: "/krishna.jpg",
+    name: "Krishna Gupta",
+    post: "App Developer",
     org: "SDC USS",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/ayuugoyal",
@@ -109,24 +119,14 @@ const mentorsData3 = [
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
   },
   {
-    image: "/subhangi.jpg",
-    name: "Subhangi Dhasmana",
-    post: "MERN Stack Developer",
+    image: "/chaitanya.jpg",
+    name: "Chaitanya Rai",
+    post: "Full Stack Developer",
     org: "SDC USS",
     instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
+    twitterLink: "https://twitter.com/ayuugoyal",
+    githubLink: "https://github.com/ayuugoyal",
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
-  },
-  {
-    image: "/shubh.jpg",
-    name: "Shubh Sardana",
-    post: "Flutter Developer",
-    org: "SDC USS",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
   },
 ];
 
@@ -177,9 +177,9 @@ const page = () => {
         className="card">
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
-        <div className="grid-child-posts">{card.post}</div>
+        <div className="post">{card.post}</div>
         {/* <div className="grid-container"> */}
-        <div className="grid-child-followers ">{card.org}</div>
+        <div className="post">{card.org}</div>
         {/* </div> */}
         <ul className="social-icons">
           <li>
@@ -351,7 +351,9 @@ const page = () => {
         <TitleText
           title={
             <>
-              <div className="pt-7 text-[50px]">hackEDCode Orgainzers</div>
+              <div className="pt-7 my-4 text-3xl md:text-5xl p-[10px] text-white opacity-75 font-bold leading-tight text-center md:text-left">
+                hackEDCode Orgainzers
+              </div>
             </>
           }
           textStyles="text-center"
@@ -361,7 +363,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row items-center flex- gap-5">
           {mentorsData1.map(mentorCards)}
         </motion.div>
         <motion.div
