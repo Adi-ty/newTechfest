@@ -15,8 +15,7 @@ function Page() {
               <div className="mob-text">
                 <p className="text-blk contactus-head">Get in Touch</p>
                 <p className="text-blk contactus-subhead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-                  diam lectus sapien.
+                  We are here for all your queries!
                 </p>
               </div>
               <div className="responsive-container-block" id="i2cbk">
@@ -94,19 +93,31 @@ function Page() {
                 Delhi, 110032
               </p>
               <div className="social-media-links mob">
-                <a className="social-icon-link" href="#" id="ix94i-2-2">
+                <a
+                  className="social-icon-link"
+                  href="https://twitter.com/GGSIPU_EDC"
+                  id="ix94i-2-2"
+                >
                   <img
                     className="link-img image-block"
                     src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"
                   />
                 </a>
-                <a className="social-icon-link" href="#" id="itixd">
+                <a
+                  className="social-icon-link"
+                  href="https://www.instagram.com/elysian.edc/"
+                  id="itixd"
+                >
                   <img
                     className="link-img image-block"
                     src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"
                   />
                 </a>
-                <a className="social-icon-link" href="#" id="izxvt">
+                <a
+                  className="social-icon-link"
+                  href="https://www.linkedin.com/in/ggsipuedc/"
+                  id="izxvt"
+                >
                   <img
                     className="link-img image-block"
                     src="https://www.freepnglogos.com/uploads/linkedin-social-media-logo-7.png"

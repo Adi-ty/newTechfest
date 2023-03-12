@@ -1,8 +1,6 @@
 "use client";
-import TeamMemberCard from "../../components/TeamCard";
-import { useState } from "react";
+
 import { motion } from "framer-motion";
-import styles from "../../styles";
 import { TitleText, TypingText } from "../../components/CustomTexts";
 import { BsInstagram } from "react-icons/bs";
 import {
@@ -10,54 +8,15 @@ import {
   AiFillLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
-import { navVariants } from "../../utils/motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import "../../styles/hack.css";
 
-// const teamMembers = [
-//   {
-//     name: "Aman Sharma",
-//     title: "Full Stack Developer",
-//     imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
-//     githubLink: "https://github.com/lunchspider",
-//   },
-//   {
-//     name: "Aditya Singh",
-//     title: "Full Stack Developer",
-//     imageUrl: "/Devfest.jpg",
-//     githubLink: "https://github.com/adi-ty",
-//   },
-//   {
-//     name: "Subhangi Dhasmana",
-//     title: "Full Stack Developer",
-//     imageUrl: "/subhangi.jpg",
-//     githubLink: "https://github.com/SUBHANGI-DHASMANA",
-//   },
-//   {
-//     name: "Ayush Goyal",
-//     title: "Full Stack Developer",
-//     imageUrl: "/Goyal.png",
-//     githubLink: "https://github.com/ayuugoyal",
-//   },
-//   {
-//     name: "Ayush Gupta",
-//     title: "Full Stack Developer",
-//     imageUrl: "/ayushGupta.jpg",
-//     githubLink: "https://github.com/ayushgupta4002",
-//   },
-//   {
-//     name: "Chaitanya Rai",
-//     title: "Full Stack Developer",
-//     imageUrl: "/chaitanya.jpg",
-//     githubLink: "https://github.com/Chaitanyarai899",
-//   },
-// ];
-const mentorsData1 = [
+const teamMembers1 = [
   {
     image: "/ayuuimgff.jpg",
     name: "Ayush Goyal",
     post: "Technical Head",
-    // org: "SDC",
+    org: "USAR",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/ayuugoyal",
     githubLink: "https://github.com/ayuugoyal",
@@ -66,8 +25,8 @@ const mentorsData1 = [
   {
     image: "/Devfest.jpg",
     name: "Aditya Singh",
-    post: "Web Head",
-    // org: "SDC",
+    post: "Website Lead",
+    org: "USAR",
     instaLink: "https://instagram.com/i_am_adi_.02?igshid=YmMyMTA2M2Y=",
     twitterLink: "https://twitter.com/AdityaS13082002",
     githubLink: "https://github.com/Adi-ty",
@@ -77,8 +36,8 @@ const mentorsData1 = [
     image: "/ayushGupta.jpg",
     name: "Ayush Gupta",
     post: "Web Team",
-    // org: "SDC",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
+    org: "USAR",
+    instaLink: "https://www.instagram.com/_ayush_ftw/",
     twitterLink: "https://twitter.com/Ayush3241?t=kcXK364IwByDDG5K2R6lSA&s=09",
     githubLink: "https://github.com/ayushgupta4002",
     linkedinLink: "https://www.linkedin.com/in/ayush-gupta-253092227",
@@ -87,39 +46,52 @@ const mentorsData1 = [
     image: "/subhangi.jpg",
     name: "Subhangi Dhasmana",
     post: "Web Team",
-    // org: "SDC",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
+    org: "USAR",
+    instaLink: "https://www.instagram.com/subhangi_dhasmana/",
+    twitterLink: "https://twitter.com/SubhangiDhas",
     githubLink: "https://github.com/SUBHANGI-DHASMANA",
-    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+    linkedinLink: "https://www.linkedin.com/in/subhangi-dhasmana-04a911235/",
   },
 ];
-const mentorsData2 = [
+const teamMembers2 = [
   {
     image: "/chaitanya.jpg",
     name: "Chaitanya Rai",
     post: "Web Team",
-    // org: "SDC",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/ayuugoyal",
-    githubLink: "https://github.com/ayuugoyal",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    org: "USAR",
+    instaLink: "https://www.instagram.com/chaitanya.rai/",
+    twitterLink: "#",
+    githubLink: "https://github.com/Chaitanyarai899",
+    linkedinLink: "https://www.linkedin.com/in/chaitanya-rai-369881102/",
+  },
+  {
+    image: "/tanishka.jpg",
+    name: "Taniska Jha",
+    post: "Web Team",
+    org: "USAR",
+    instaLink: "https://www.instagram.com/taniska_._jha/",
+    twitterLink: "https://twitter.com/Taniska_Jha",
+    githubLink: "https://github.com/TaniskaJha",
+    linkedinLink: "https://www.linkedin.com/in/taniska-jha-654b22229/",
   },
   {
     image: "/default.png",
-    name: "Aman Gupta",
+    name: "Aman Sharma",
     post: "Web Team",
-    // org: "SDC",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    org: "USAR",
+    instaLink: "#",
+    twitterLink: "#",
+    githubLink: "https://github.com/lunchspider",
+    linkedinLink: "#",
   },
+];
+
+const teamMembers3 = [
   {
     image: "/nidhikhana.jpg",
     name: "Nidhi Khana",
     post: "UI/UX Team",
-    // org: "SDC",
+    org: "USDI",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
     githubLink: "https://github.com/shubhsardana29",
@@ -129,19 +101,20 @@ const mentorsData2 = [
     image: "/aryan.jpg",
     name: "Aryan Khandelwal",
     post: "UI/UX Team",
-    // org: "SDC",
+    org: "USDI",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
     githubLink: "https://github.com/shubhsardana29",
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
   },
 ];
+
 const coreOrgData1 = [
   {
     image: "/abhishek.jpg",
     name: "Abhishek Garg",
-    post: "SR, USAR",
-    // org: "SDC",
+    post: "Student Representative",
+    org: "USAR",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/ayuugoyal",
     githubLink: "https://github.com/ayuugoyal",
@@ -150,8 +123,8 @@ const coreOrgData1 = [
   {
     image: "/tanishqa.jpg",
     name: "Tanisqa Bansal",
-    post: "SR, USAR",
-    // org: "SDC",
+    post: "Student Representative",
+    org: "USAR",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
     githubLink: "https://github.com/shubhsardana29",
@@ -160,30 +133,30 @@ const coreOrgData1 = [
   {
     image: "/raj.jpg",
     name: "Raj Jaiswal",
-    post: "Academic SR, USAR",
-    // org: "SDC",
+    post: "Aca. Student Representative",
+    org: "USAR",
     instaLink: "https://www.instagram.com/shuuubhhh/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
     githubLink: "https://github.com/shubhsardana29",
     linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
   },
+];
+const coreOrgData2 = [
   {
     image: "/nidhi.jpg",
     name: "Nidhi",
-    post: "SR, USDI",
-    // org: "SDC",
+    post: "Student Representative",
+    org: "USDI",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/ayuugoyal",
     githubLink: "https://github.com/ayuugoyal",
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
   },
-];
-const coreOrgData2 = [
   {
     image: "/default.png",
     name: "Sanya",
-    post: "SR, USDI",
-    // org: "SDC",
+    post: "Student Representative",
+    org: "USDI",
     instaLink: "https://www.instagram.com/ayuugoyal/",
     twitterLink: "https://twitter.com/NotSoShubhhh",
     githubLink: "https://github.com/shubhsardana29",
@@ -192,8 +165,6 @@ const coreOrgData2 = [
 ];
 
 const Team = () => {
-  // const [active, setActive] = useState("Aditya Singh");
-
   const renderCards = (card, index) => {
     return (
       <motion.div
@@ -202,12 +173,13 @@ const Team = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         key={index}
-        className="card">
+        className="card z-20"
+      >
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
-        <div className="grid-child-posts">{card.post}</div>
+        <div className="post">{card.post}</div>
         {/* <div className="grid-container"> */}
-        <div className="grid-child-followers ">{card.org}</div>
+        <div className="post">{card.org}</div>
         {/* </div> */}
         <ul className="social-icons">
           <li>
@@ -244,36 +216,14 @@ const Team = () => {
   };
 
   return (
-    // <section className={`${styles.paddings}`} id="members">
-    //   <motion.div
-    //     variants={staggerContainer}
-    //     initial="hidden"
-    //     whileInView="show"
-    //     viewport={{ once: false, amount: 0.25 }}
-    //     className={`${styles.innerWidth} mx-auto flex flex-col`}
-    //   >
-    //     <TypingText title="| Team Members" textStyles="text-center" />
-    //     <TitleText title={<>Website Developed By</>} textStyles="text-center" />
-    //     <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-    //       {teamMembers.map((member, index) => (
-    //         <TeamMemberCard
-    //           key={member.name}
-    //           {...member}
-    //           index={index}
-    //           active={active}
-    //           handleClick={setActive}
-    //         />
-    //       ))}
-    //     </div>
-    //   </motion.div>
-    // </section>
-    // <div>hello</div>
     <>
       <div>
         <TitleText
           title={
             <>
-              <div className="pt-7 text-[50px]">Web Team</div>
+              <div className="text-white text-4xl font-semi-bold lg:pb-4 text-center">
+                Website Developed by
+              </div>
             </>
           }
           textStyles="text-center"
@@ -283,23 +233,46 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
-          {mentorsData1.map(renderCards)}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
+          {teamMembers1.map(renderCards)}
         </motion.div>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
-          {mentorsData2.map(renderCards)}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
+          {teamMembers2.map(renderCards)}
+        </motion.div>
+        <TitleText
+          title={
+            <>
+              <div className="text-white text-4xl font-semi-bold lg:pb-4 pt-10 text-center">
+                Website Designed by
+              </div>
+            </>
+          }
+          textStyles="text-center"
+        />
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
+          {teamMembers3.map(renderCards)}
         </motion.div>
       </div>
       <div>
         <TitleText
           title={
             <>
-              <div className="pt-7 text-[50px]">Core Orgainsers</div>
+              <div className="text-white text-4xl pt-10 font-semi-bold lg:pb-4 text-center">
+                Core Orgainsers
+              </div>
             </>
           }
           textStyles="text-center"
@@ -309,7 +282,8 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {coreOrgData1.map(renderCards)}
         </motion.div>
         <motion.div
@@ -317,7 +291,8 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {coreOrgData2.map(renderCards)}
         </motion.div>
       </div>

@@ -9,6 +9,7 @@ import {
   AiFillLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import { FaRobot } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
@@ -29,7 +30,7 @@ const mentorsData1 = [
     name: "Priyanshu Singh",
     post: "App Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
+    instaLink: "https://www.instagram.com/27priyanshu_/",
     twitterLink: "https://twitter.com/027_Priyanshu",
     githubLink: "https://github.com/27priyanshu",
     linkedinLink: "https://www.linkedin.com/in/priyanshu-singh-a30789200/",
@@ -39,10 +40,10 @@ const mentorsData1 = [
     name: "Aditya Singh",
     post: "Full Stack Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
+    instaLink: "https://instagram.com/i_am_adi_.02?igshid=YmMyMTA2M2Y=",
+    twitterLink: "https://twitter.com/AdityaS13082002",
+    githubLink: "https://github.com/Adi-ty",
+    linkedinLink: "https://www.linkedin.com/in/adityasingh----/",
   },
   {
     image: "/shubh.jpg",
@@ -71,19 +72,19 @@ const mentorsData2 = [
     name: "Subhangi Dhasmana",
     post: "Full Stack Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://www.instagram.com/subhangi_dhasmana/",
+    twitterLink: "https://twitter.com/SubhangiDhas",
+    githubLink: "https://github.com/SUBHANGI-DHASMANA",
+    linkedinLink: "https://www.linkedin.com/in/subhangi-dhasmana-04a911235/",
   },
   {
     image: "/ayushGupta.jpg",
     name: "Ayush Gupta",
     post: "Full Stack Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
+    instaLink: "https://www.instagram.com/_ayush_ftw/",
     twitterLink: "https://twitter.com/Ayush3241?t=kcXK364IwByDDG5K2R6lSA&s=09",
-    githubLink: "https://github.com/shubhsardana29",
+    githubLink: "https://github.com/ayushgupta4002",
     linkedinLink: "https://www.linkedin.com/in/ayush-gupta-253092227",
   },
   {
@@ -91,7 +92,7 @@ const mentorsData2 = [
     name: "Avanish Raj",
     post: "App Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/shuuubhhh/",
+    instaLink: "https://www.instagram.com/i_am_avanish_raj_/",
     twitterLink: "https://twitter.com/raj_054",
     githubLink: "https://github.com/avanishraj",
     linkedinLink: "https://www.linkedin.com/in/avanish-r-69965b124/",
@@ -113,35 +114,35 @@ const mentorsData3 = [
     name: "Krishna Gupta",
     post: "App Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/ayuugoyal",
-    githubLink: "https://github.com/ayuugoyal",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://www.instagram.com/krishnagupta8220/",
+    twitterLink: "#",
+    githubLink: "#",
+    linkedinLink: "https://www.linkedin.com/in/krishna-gupta-159188217/",
   },
   {
     image: "/chaitanya.jpg",
     name: "Chaitanya Rai",
     post: "Full Stack Developer",
     org: "SDC USS",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/ayuugoyal",
-    githubLink: "https://github.com/ayuugoyal",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://www.instagram.com/chaitanya.rai/",
+    twitterLink: "#",
+    githubLink: "https://github.com/Chaitanyarai899",
+    linkedinLink: "https://www.linkedin.com/in/chaitanya-rai-369881102/",
   },
 ];
 
 const trackdata1 = [
   {
-    title: "Web 3.0",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    title: "WEB 3.0",
+    desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
   },
   {
-    title: "Open Innovation",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    title: "OPEN INNOVATION",
+    desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
   },
   {
     title: "AI/ML",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
   },
 ];
 const trackdata2 = [
@@ -228,13 +229,18 @@ const page = () => {
             <TitleText
               title={
                 <>
-                  <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+                  <img
+                    src="/hackEDCodeLogo.png"
+                    className=" w-[300px]"
+                    alt=""
+                  />
+                  {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
                     hack
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
                       EDC
                     </span>
                     ode
-                  </div>
+                  </div> */}
                 </>
               }
               textStyles="text-center"
@@ -289,7 +295,7 @@ const page = () => {
           />
 
           <div
-            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
+            className=" mt-4 flex justify-center lg:flex-row flex-col items-center gap-5"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -298,7 +304,7 @@ const page = () => {
             {trackdata1.map(trackscard)}
           </div>
           <div
-            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
+            className=" mt-4 flex justify-center lg:flex-row flex-col items-center gap-5"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -306,52 +312,11 @@ const page = () => {
             }}>
             {trackdata2.map(trackscard)}
           </div>
-
-          {/* <div
-            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "10vh",
-            }}>
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-          </div> */}
         </motion.div>
         <TitleText
           title={
             <>
-              <div className="pt-7 my-4 text-3xl md:text-5xl p-[10px] text-white opacity-75 font-bold leading-tight text-center md:text-left">
+              <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
                 hackEDCode Orgainzers
               </div>
             </>
@@ -363,7 +328,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row items-center flex- gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData1.map(mentorCards)}
         </motion.div>
         <motion.div
@@ -371,7 +336,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData2.map(mentorCards)}
         </motion.div>
         <motion.div
@@ -379,7 +344,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData3.map(mentorCards)}
         </motion.div>
       </div>

@@ -3,17 +3,17 @@
   --card-width: calc(var(--card-height) / 1.5);
 }
 
-* {
+.countdown * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-.container {
+.countdown {
   position: relative;
 }
 
-.timer-wrapper {
+.countdown .timer-wrapper {
   width: 100vw;
   height: 50px;
   margin: 70 auto;
@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%);
 }
 
-.card {
+.countdown .card {
   width: var(--card-width);
   height: var(--card-height);
   position: relative;
@@ -44,32 +44,32 @@
   z-index: 0;
 }
 
-.card:hover {
+.countdown .card:hover {
   z-index: 1;
 }
 
-.cover-image {
+.countdown .cover-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.wrapper {
+.countdown .wrapper {
   transition: all 0.5s;
   position: absolute;
   width: 100%;
   z-index: -1;
 }
 
-.card:hover .wrapper {
+.countdown .card:hover .wrapper {
   transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
-.wrapper::before,
-.wrapper::after {
+.countdown .wrapper::before,
+.countdown .wrapper::after {
   content: "";
   opacity: 0;
   width: 100%;
@@ -79,7 +79,7 @@
   left: 0;
 }
 
-.wrapper::before {
+.countdown .wrapper::before {
   top: 0;
   height: 100%;
   background-image: linear-gradient(to top,
@@ -88,7 +88,7 @@
       rgba(12, 13, 19) 97%);
 }
 
-.wrapper::after {
+.countdown .wrapper::after {
   bottom: 0;
   opacity: 1;
   background-image: linear-gradient(to bottom,
@@ -97,12 +97,12 @@
       rgba(12, 13, 19) 97%);
 }
 
-.card:hover .wrapper::before,
-.wrapper::after {
+.countdown .card:hover .wrapper::before,
+.countdown .wrapper::after {
   opacity: 1;
 }
 
-.card:hover .wrapper::after {
+.countdown .card:hover .wrapper::after {
   height: 120px;
 }
 
@@ -111,7 +111,7 @@
   transition: transform 0.5s;
   color: white;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 20;
 }
 
 .card:hover .title {
@@ -133,7 +133,7 @@
   display: flex;
   border: solid 2px #46016831;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 60px;
   
 }
 .timer-segment {
@@ -154,3 +154,5 @@
 .label {
   font-size: 1.5rem;
 }
+
+
