@@ -140,6 +140,8 @@ const coreOrgData1 = [
     githubLink: "https://github.com/shubhsardana29",
     linkedinLink: "https://www.linkedin.com/in/shubh-sardana-76a750215/",
   },
+];
+const coreOrgData2 = [
   {
     image: "/nidhi.jpg",
     name: "Nidhi",
@@ -150,8 +152,6 @@ const coreOrgData1 = [
     githubLink: "https://github.com/ayuugoyal",
     linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
   },
-];
-const coreOrgData2 = [
   {
     image: "/default.png",
     name: "Sanya",

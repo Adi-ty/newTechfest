@@ -133,11 +133,11 @@ const mentorsData3 = [
 
 const trackdata1 = [
   {
-    title: "Web 3.0",
+    title: "WEB 3.0",
     desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
   },
   {
-    title: "Open Innovation",
+    title: "OPEN INNOVATION",
     desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
   },
   {
@@ -295,7 +295,7 @@ const page = () => {
           />
 
           <div
-            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
+            className=" mt-4 flex justify-center lg:flex-row flex-col items-center gap-5"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -304,7 +304,7 @@ const page = () => {
             {trackdata1.map(trackscard)}
           </div>
           <div
-            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
+            className=" mt-4 flex justify-center lg:flex-row flex-col items-center gap-5"
             style={{
               display: "flex",
               justifyContent: "center",
