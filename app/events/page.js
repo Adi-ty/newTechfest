@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/events.css";
 import { TitleText } from "../../components/CustomTexts";
+import CountdownTimer from "./CountdownTimer";
 
 
 const page = () => {
@@ -101,9 +102,12 @@ const page = () => {
 
   return (
     <>
-      <div className=" items-center ">
+     <div className="flex flex-col items-center gap-1">
+      <div className="flex flex-col items-center gap-50">
         <TitleText title={<>Upcoming Events</>} textStyles="text-center" />
-        <div className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+        <CountdownTimer/>
+      </div>
+        <div className=" mt-16 flex justify-center lg:flex-row flex-col gap-5">
           {upcomingEv.map(renderCard)}
         </div>
       </div>
