@@ -25,7 +25,7 @@ const teamMembers1 = [
   {
     image: "/Devfest.jpg",
     name: "Aditya Singh",
-    post: "Web Head",
+    post: "Website Lead",
     org: "USAR",
     instaLink: "https://instagram.com/i_am_adi_.02?igshid=YmMyMTA2M2Y=",
     twitterLink: "https://twitter.com/AdityaS13082002",
@@ -173,7 +173,8 @@ const Team = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         key={index}
-        className="card">
+        className="card z-20"
+      >
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
         <div className="post">{card.post}</div>
@@ -221,7 +222,7 @@ const Team = () => {
           title={
             <>
               <div className="text-white text-4xl font-semi-bold lg:pb-4 text-center">
-                Web Team
+                Website Developed by
               </div>
             </>
           }
@@ -232,7 +233,8 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {teamMembers1.map(renderCards)}
         </motion.div>
         <motion.div
@@ -240,15 +242,27 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {teamMembers2.map(renderCards)}
         </motion.div>
+        <TitleText
+          title={
+            <>
+              <div className="text-white text-4xl font-semi-bold lg:pb-4 pt-10 text-center">
+                Website Designed by
+              </div>
+            </>
+          }
+          textStyles="text-center"
+        />
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {teamMembers3.map(renderCards)}
         </motion.div>
       </div>
@@ -256,7 +270,7 @@ const Team = () => {
         <TitleText
           title={
             <>
-              <div className="text-white text-4xl pt-10 font-semi-bold lg:pb-4 pt-5 text-center">
+              <div className="text-white text-4xl pt-10 font-semi-bold lg:pb-4 text-center">
                 Core Orgainsers
               </div>
             </>
@@ -268,7 +282,8 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {coreOrgData1.map(renderCards)}
         </motion.div>
         <motion.div
@@ -276,7 +291,8 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
+        >
           {coreOrgData2.map(renderCards)}
         </motion.div>
       </div>

@@ -49,7 +49,7 @@ const Footer = () => (
                 <FaLinkedin size={24} />
               </a>
               <a
-                href="https://twitter.com/SDC_USS"
+                href="https://twitter.com/GGSIPU_EDC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
