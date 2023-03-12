@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import { useEffect, useState } from "react";
 import styles from "./module.css";
-
 
 const CountdownTimer = () => {
   const [partyTime, setPartyTime] = useState(false);
@@ -42,15 +41,9 @@ const CountdownTimer = () => {
 
   return (
     <div className={styles.container}>
-      <div>
-        <title>event</title>
-        <link rel="icon" href="/favicon.ico" />
-      </div>
-
       {partyTime ? (
         <>
           <h1>Let's Reveal The Events !! </h1>
-        
         </>
       ) : (
         <>
@@ -77,11 +70,10 @@ const CountdownTimer = () => {
               </div>
             </div>
           </div>
-          
         </>
       )}
     </div>
   );
 };
 
-export default CountdownTimer; 
+export default CountdownTimer;

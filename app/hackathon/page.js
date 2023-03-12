@@ -9,6 +9,7 @@ import {
   AiFillLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import { FaRobot } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
@@ -133,15 +134,15 @@ const mentorsData3 = [
 const trackdata1 = [
   {
     title: "Web 3.0",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
   },
   {
     title: "Open Innovation",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
   },
   {
     title: "AI/ML",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
   },
 ];
 const trackdata2 = [
@@ -228,13 +229,18 @@ const page = () => {
             <TitleText
               title={
                 <>
-                  <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+                  <img
+                    src="/hackEDCodeLogo.png"
+                    className=" w-[300px]"
+                    alt=""
+                  />
+                  {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
                     hack
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
                       EDC
                     </span>
                     ode
-                  </div>
+                  </div> */}
                 </>
               }
               textStyles="text-center"
@@ -306,52 +312,11 @@ const page = () => {
             }}>
             {trackdata2.map(trackscard)}
           </div>
-
-          {/* <div
-            className="w-full flex justify-center items-center md:justify-start pb-24 lg:pb-0  fade-in"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "10vh",
-            }}>
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] pr-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              src="/Goyal.png"
-              className="h-[140px] transform hover:scale-125 duration-300 ease-in-out"
-              alt=""
-            />
-          </div> */}
         </motion.div>
         <TitleText
           title={
             <>
-              <div className="pt-7 my-4 text-3xl md:text-5xl p-[10px] text-white opacity-75 font-bold leading-tight text-center md:text-left">
+              <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
                 hackEDCode Orgainzers
               </div>
             </>
