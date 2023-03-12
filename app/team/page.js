@@ -1,8 +1,6 @@
 "use client";
-import TeamMemberCard from "../../components/TeamCard";
-import { useState } from "react";
+
 import { motion } from "framer-motion";
-import styles from "../../styles";
 import { TitleText, TypingText } from "../../components/CustomTexts";
 import { BsInstagram } from "react-icons/bs";
 import {
@@ -10,49 +8,10 @@ import {
   AiFillLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
-import { navVariants } from "../../utils/motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import "../../styles/hack.css";
 
-// const teamMembers = [
-//   {
-//     name: "Aman Sharma",
-//     title: "Full Stack Developer",
-//     imageUrl: "https://apod.nasa.gov/apod/image/1611/PacmanCrawfordNew1024.jpg",
-//     githubLink: "https://github.com/lunchspider",
-//   },
-//   {
-//     name: "Aditya Singh",
-//     title: "Full Stack Developer",
-//     imageUrl: "/Devfest.jpg",
-//     githubLink: "https://github.com/adi-ty",
-//   },
-//   {
-//     name: "Subhangi Dhasmana",
-//     title: "Full Stack Developer",
-//     imageUrl: "/subhangi.jpg",
-//     githubLink: "https://github.com/SUBHANGI-DHASMANA",
-//   },
-//   {
-//     name: "Ayush Goyal",
-//     title: "Full Stack Developer",
-//     imageUrl: "/Goyal.png",
-//     githubLink: "https://github.com/ayuugoyal",
-//   },
-//   {
-//     name: "Ayush Gupta",
-//     title: "Full Stack Developer",
-//     imageUrl: "/ayushGupta.jpg",
-//     githubLink: "https://github.com/ayushgupta4002",
-//   },
-//   {
-//     name: "Chaitanya Rai",
-//     title: "Full Stack Developer",
-//     imageUrl: "/chaitanya.jpg",
-//     githubLink: "https://github.com/Chaitanyarai899",
-//   },
-// ];
-const mentorsData1 = [
+const teamMembers1 = [
   {
     image: "/ayuuimgff.jpg",
     name: "Ayush Goyal",
@@ -94,7 +53,7 @@ const mentorsData1 = [
     linkedinLink: "https://www.linkedin.com/in/subhangi-dhasmana-04a911235/",
   },
 ];
-const mentorsData2 = [
+const teamMembers2 = [
   {
     image: "/chaitanya.jpg",
     name: "Chaitanya Rai",
@@ -127,7 +86,7 @@ const mentorsData2 = [
   },
 ];
 
-const mentorsData3 = [
+const teamMembers3 = [
   {
     image: "/nidhikhana.jpg",
     name: "Nidhi Khana",
@@ -206,8 +165,6 @@ const coreOrgData2 = [
 ];
 
 const Team = () => {
-  // const [active, setActive] = useState("Aditya Singh");
-
   const renderCards = (card, index) => {
     return (
       <motion.div
@@ -219,9 +176,9 @@ const Team = () => {
         className="card">
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
-        <div className="grid-child-posts">{card.post}</div>
+        <div className="post">{card.post}</div>
         {/* <div className="grid-container"> */}
-        <div className="grid-child-followers ">{card.org}</div>
+        <div className="post">{card.org}</div>
         {/* </div> */}
         <ul className="social-icons">
           <li>
@@ -258,36 +215,14 @@ const Team = () => {
   };
 
   return (
-    // <section className={`${styles.paddings}`} id="members">
-    //   <motion.div
-    //     variants={staggerContainer}
-    //     initial="hidden"
-    //     whileInView="show"
-    //     viewport={{ once: false, amount: 0.25 }}
-    //     className={`${styles.innerWidth} mx-auto flex flex-col`}
-    //   >
-    //     <TypingText title="| Team Members" textStyles="text-center" />
-    //     <TitleText title={<>Website Developed By</>} textStyles="text-center" />
-    //     <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-    //       {teamMembers.map((member, index) => (
-    //         <TeamMemberCard
-    //           key={member.name}
-    //           {...member}
-    //           index={index}
-    //           active={active}
-    //           handleClick={setActive}
-    //         />
-    //       ))}
-    //     </div>
-    //   </motion.div>
-    // </section>
-    // <div>hello</div>
     <>
       <div>
         <TitleText
           title={
             <>
-              <div className="pt-7 text-[50px]">Web Team</div>
+              <div className="text-white text-4xl font-semi-bold lg:pb-4 text-center">
+                Web Team
+              </div>
             </>
           }
           textStyles="text-center"
@@ -297,31 +232,33 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
-          {mentorsData1.map(renderCards)}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          {teamMembers1.map(renderCards)}
         </motion.div>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
-          {mentorsData2.map(renderCards)}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          {teamMembers2.map(renderCards)}
         </motion.div>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
-          {mentorsData3.map(renderCards)}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          {teamMembers3.map(renderCards)}
         </motion.div>
       </div>
       <div>
         <TitleText
           title={
             <>
-              <div className="pt-7 text-[50px]">Core Orgainsers</div>
+              <div className="text-white text-4xl pt-10 font-semi-bold lg:pb-4 pt-5 text-center">
+                Core Orgainsers
+              </div>
             </>
           }
           textStyles="text-center"
@@ -331,7 +268,7 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {coreOrgData1.map(renderCards)}
         </motion.div>
         <motion.div
@@ -339,7 +276,7 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {coreOrgData2.map(renderCards)}
         </motion.div>
       </div>

@@ -328,7 +328,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row items-center flex- gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData1.map(mentorCards)}
         </motion.div>
         <motion.div
@@ -336,7 +336,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData2.map(mentorCards)}
         </motion.div>
         <motion.div
@@ -344,7 +344,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col gap-5">
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData3.map(mentorCards)}
         </motion.div>
       </div>
