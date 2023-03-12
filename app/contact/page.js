@@ -15,8 +15,7 @@ function Page() {
               <div className="mob-text">
                 <p className="text-blk contactus-head">Get in Touch</p>
                 <p className="text-blk contactus-subhead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis
-                  diam lectus sapien.
+                  We are here for all your queries!
                 </p>
               </div>
               <div className="responsive-container-block" id="i2cbk">
