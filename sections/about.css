@@ -1,0 +1,20 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    
+}
+.image{
+    align-content: center;
+    padding-top: 3%;
+    padding-left: 17%;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.title.p{
+    padding-left: 25%;
+    height: 9vh;
+}
