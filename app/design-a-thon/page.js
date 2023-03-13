@@ -14,17 +14,25 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const trackdata1 = [
   {
-    title: "track1",
+    title: "Ui/Ux",
     desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
   },
   {
-    title: "track2",
+    title: "Product Design",
     desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
   },
   {
-    title: "track3",
+    title: "Game Design",
     desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
   },
+  {
+    title: "Interior/Furniture Design",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
+  },
+  {
+    title: "Re-imagining medicine",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
+  }
 ];
 
 const page = () => {
