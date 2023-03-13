@@ -30,25 +30,17 @@ const trackdata1 = [
     desc: "The process of creating and shaping the mechanics, systems, and rules of a game. Games can be created for entertainment, education, exercise, or experimental purposes.",
     title: "Game Design",
     desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
-  },
-  {
-    title: "Interior/Furniture Design",
-    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
-  },
-  {
-    title: "Re-imagining medicine",
-    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
-  },
+  }
 ];
 
 const page = () => {
   const trackscard = (cd, index) => {
     return (
-      <div className="p-10">
+      <div className="p-10 content-center">
         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
           {cd.title}
         </h1>
-        <p className="text-white w-[25vw] text-center">{cd.desc}</p>
+        <p className="text-white text-center">{cd.desc}</p>
       </div>
     );
   };
@@ -105,7 +97,7 @@ const page = () => {
   return (
     <>
       <div>
-        <div className="container items-center p-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row">
+        <div className="container p-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row content-center">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -148,7 +140,7 @@ const page = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className="w-full xl:w-2/5 p-10 overflow-hidden">
+            className="w-full xl:w-2/5">
             <motion.img
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -177,12 +169,7 @@ const page = () => {
           />
 
           <div
-            className=" mt-4 flex justify-center lg:flex-row flex-col items-center gap-5"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              // paddingTop: "10vh",
-            }}>
+            className="flex justify-center lg:flex-row flex-col items-center">
             {trackdata1.map(trackscard)}
           </div>
         </motion.div>
