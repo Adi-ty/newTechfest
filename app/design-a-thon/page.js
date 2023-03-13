@@ -14,16 +14,16 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const trackdata1 = [
   {
-    title: "track1",
-    desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
+    title: "UI/UX",
+    desc: "This will help students to adapt the process of creating a website application that delivers a seamless User Experience and meets user's core needs with a clear, compelling User Unterface.",
   },
   {
-    title: "track2",
-    desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
+    title: "PRODUCT DESIGN",
+    desc: "Product Design describes the process of imagining, creating, and iterating products that solve the problems of user or address specific needs in a given market.",
   },
   {
-    title: "track3",
-    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
+    title: "GAME DESIGN",
+    desc: "The process of creating and shaping the mechanics, systems, and rules of a game. Games can be created for entertainment, education, exercise, or experimental purposes.",
   },
 ];
 
@@ -101,11 +101,7 @@ const page = () => {
             <TitleText
               title={
                 <>
-                  <img
-                    src="/hackEDCodeLogo.png"
-                    className=" w-[300px]"
-                    alt=""
-                  />
+                  <img src="/logo_desig.png" className=" w-[180px]" alt="" />
                   {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
                     hack
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
@@ -144,7 +140,7 @@ const page = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
               className="animate relative rounded-2xl"
-              src="/hacki.png"
+              src="/designHack.png"
               alt=""
             />
           </motion.div>

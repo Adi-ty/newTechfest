@@ -25,20 +25,20 @@ const Page = () => {
   return (
     <div>
       <center>
-      <img
-        id="gif"
-        src="/0001.gif"
-        alt="GIF"
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: 9999,
-        }}
-      />
+        <img
+          id="gif"
+          src="/0001.gif"
+          alt="GIF"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 9999,
+          }}
+        />
       </center>
       {!showOtherComponents && <div style={{ height: "100vh" }} />}
       {showOtherComponents && (

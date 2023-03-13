@@ -151,7 +151,7 @@ const trackdata2 = [
     desc: "The IoT track of the hackathon invites participants to creatively use data from IoT devices and sensors to build smart, connected applications that have the potential to enhance the quality of life for individuals, communities, and businesses.",
   },
   {
-    title: "Healthcare",
+    title: "HEALTHCARE",
     desc: "This refers to computer programs and technologies specifically created to enhance the efficiency of hospitals, offer fresh perspectives on pharmaceuticals and therapies, or enhance the overall standard of healthcare.",
   },
 ];
