@@ -98,7 +98,7 @@ const Navbar = () => {
             <li
               onClick={handleNav}
               className="p-4 text-4xl text-white hover:text-gray-500">
-              <Link href="/hackathon">HackEDCode</Link>
+              <Link href="/hackathon">hackEDCode</Link>
             </li>
             <li
               onClick={handleNav}

@@ -316,7 +316,7 @@ const Team = () => {
           title={
             <>
               <div className="text-white text-4xl pt-10 font-semi-bold lg:pb-4 text-center">
-                Core Orgainsers
+                Core Organizers
               </div>
             </>
           }

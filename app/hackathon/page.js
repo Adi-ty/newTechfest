@@ -201,7 +201,7 @@ const page = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-twitter">
-                <AiOutlineGithub />
+                <AiOutlineTwitter />
               </i>
             </a>
           </li>
@@ -215,7 +215,7 @@ const page = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-codepen">
-                <AiOutlineTwitter />
+                <AiOutlineGithub />
               </i>
             </a>
           </li>
@@ -311,7 +311,7 @@ const page = () => {
             title={
               <>
                 <p className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
-                  Our Tracks
+                  Categories
                 </p>
               </>
             }
@@ -347,7 +347,7 @@ const page = () => {
             title={
               <>
                 <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
-                  sponsors
+                  Sponsors
                 </div>
                 {/* <img src="/hackEDCodeLogo.png" className=" w-[300px]" alt="" /> */}
                 {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
