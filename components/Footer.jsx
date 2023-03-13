@@ -11,8 +11,7 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
-  >
+    className={`${styles.xPaddings} py-8 relative`}>
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
@@ -21,8 +20,7 @@ const Footer = () => (
         </h4>
         <button
           type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
-        >
+          className="flex items-center h-fit py-4 px-6 bg-[#9215d2] rounded-[32px] gap-[12px]">
           <span className="font-normal text-[16px] text-white">
             <Link href="/contact"> Contact Us </Link>
           </span>
@@ -44,24 +42,21 @@ const Footer = () => (
                 href="https://www.linkedin.com/in/ggsipuedc/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-blue-700 transition-colors duration-300"
-              >
+                className="text-gray-500 hover:text-blue-700 transition-colors duration-300">
                 <FaLinkedin size={24} />
               </a>
               <a
                 href="https://twitter.com/GGSIPU_EDC"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
-              >
+                className="text-gray-500 hover:text-blue-500 transition-colors duration-300">
                 <FaTwitter size={24} />
               </a>
               <a
                 href="https://www.instagram.com/elysian.edc/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-red-500 transition-colors duration-300"
-              >
+                className="text-gray-500 hover:text-red-500 transition-colors duration-300">
                 <FaInstagram size={24} />
               </a>
             </div>
