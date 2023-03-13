@@ -75,14 +75,14 @@ const teamMembers2 = [
     linkedinLink: "https://www.linkedin.com/in/taniska-jha-654b22229/",
   },
   {
-    image: "/default.png",
+    image: "/aman.jpg",
     name: "Aman Sharma",
     post: "Web Team",
     org: "USAR",
-    instaLink: "#",
-    twitterLink: "#",
+    instaLink: "https://www.instagram.com/a.dot31",
+    twitterLink: "https://twitter.com/lunchspider",
     githubLink: "https://github.com/lunchspider",
-    linkedinLink: "#",
+    linkedinLink: "https://www.linkedin.com/in/aman-sharma-96b508238",
   },
 ];
 
