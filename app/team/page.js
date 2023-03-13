@@ -180,7 +180,7 @@ const Team = () => {
         {/* <div className="grid-container"> */}
         <div className="post">{card.org}</div>
         {/* </div> */}
-        <ul className="social-icons">
+        <ul className="social-icons flex">
           <li>
             <a href={card.instaLink}>
               <i className="fa fa-instagram">
