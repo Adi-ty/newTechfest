@@ -12,7 +12,7 @@ import {
 import { FaRobot } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
-import { fadeIn, staggerContainer } from "../../utils/motion";
+import { fadeIn, staggerContainer, textVariant2 } from "../../utils/motion";
 
 const mentorsData1 = [
   {
@@ -232,7 +232,11 @@ const page = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
             className="flex flex-col w-full xl:w-2/5 justify-center">
-            <motion.h2 className = "flex justify-center">
+            <motion.h2 
+                variants={textVariant2}
+                initial="hidden"
+                whileInView="show"
+                className = "flex justify-center">
               <img
                 src="/hackEDCodeLogo.png"
                 className=""
@@ -256,7 +260,9 @@ const page = () => {
               tools and technologies, allowing them to build high-quality
               projects that address real-world problems.
             </motion.p>
-            <div className="flex items-center justify-center w-full text-sm">
+            <motion.div 
+                variants={fadeIn("up", "tween", 0.2, 1)}
+                className="flex items-center justify-center w-full text-sm">
               <button
                 className="flex flex-row bg-white text-black p-4 rounded"
                 type="button" onClick={() => openInNewTab("https://hackedcode.devfolio.co/")}>
@@ -271,7 +277,7 @@ const page = () => {
                 </svg>
                 Register On Devfolio
               </button>
-            </div>
+            </motion.div>
           </motion.div>
           <motion.div
             variants={staggerContainer}

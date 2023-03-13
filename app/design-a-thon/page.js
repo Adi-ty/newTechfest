@@ -127,13 +127,15 @@ const page = () => {
               design problems and challenges in the design industry. These
               events are usually short-term, taking place over a day or two.
             </motion.p>
-            <div className="flex items-center justify-center pt-4 ">
+            <motion.div 
+                variants={fadeIn("up", "tween", 0.2, 1)}
+                className="flex items-center justify-center pt-4">
               <button
                 className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="button">
                 Register Here
               </button>
-            </div>
+            </motion.div>
           </motion.div>
           <motion.div
             variants={staggerContainer}
