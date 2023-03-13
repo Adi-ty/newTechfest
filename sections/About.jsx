@@ -88,7 +88,7 @@ const About = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="animate relative rounded-2xl"
-          src="/hacki.png"
+          src="/campus.jpg"
           alt=""
         />
       </motion.div>

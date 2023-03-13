@@ -335,7 +335,7 @@ const Team = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
           className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
-          {coreOrgData2.map(renderCards)}
+          {coreOrgData2.map(renderCards2)}
         </motion.div>
       </div>
     </>
