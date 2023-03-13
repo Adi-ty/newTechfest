@@ -157,14 +157,14 @@ const trackdata2 = [
 ];
 
 const openInNewTab = (url) => {
-  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
   if (newWindow) newWindow.opener = null;
 };
 
 const page = () => {
   const trackscard = (cd, index) => {
     return (
-      <motion.div 
+      <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="p-10 content-center">
         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
@@ -201,7 +201,7 @@ const page = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-twitter">
-                <AiOutlineTwitter />
+                <AiOutlineGithub />
               </i>
             </a>
           </li>
@@ -215,7 +215,7 @@ const page = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-codepen">
-                <AiOutlineGithub />
+                <AiOutlineTwitter />
               </i>
             </a>
           </li>
@@ -234,15 +234,12 @@ const page = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
             className="flex flex-col w-full xl:w-2/5 justify-center">
-            <motion.h2 
-                variants={textVariant2}
-                initial="hidden"
-                whileInView="show"
-                className = "flex justify-center">
-              <img
-                src="/hackEDCodeLogo.png"
-                className=""
-              />
+            <motion.h2
+              variants={textVariant2}
+              initial="hidden"
+              whileInView="show"
+              className="flex justify-center">
+              <img src="/hackEDCodeLogo.png" className="" />
               {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
                 hack
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
@@ -262,18 +259,25 @@ const page = () => {
               tools and technologies, allowing them to build high-quality
               projects that address real-world problems.
             </motion.p>
-            <motion.div 
-                variants={fadeIn("up", "tween", 0.2, 1)}
-                className="flex items-center justify-center w-full text-sm">
+            <motion.div
+              variants={fadeIn("up", "tween", 0.2, 1)}
+              className="flex items-center justify-center w-full text-sm">
               <button
                 className="flex flex-row bg-white text-black p-4 rounded"
-                type="button" onClick={() => openInNewTab("https://hackedcode.devfolio.co/")}>
-                <svg className ="fill-black h-[24px] w-[24px] pr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" fill="#fff">
-                    <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 
+                type="button"
+                onClick={() => openInNewTab("https://hackedcode.devfolio.co/")}>
+                <svg
+                  className="fill-black h-[24px] w-[24px] pr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 115.46 123.46"
+                  fill="#fff">
+                  <path
+                    d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 
                         12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 
                         13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 
                         2.18.08 3.34z"></path>
-                    <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 
+                  <path
+                    d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 
                         104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 
                     55.41 0 0 1 50.58 55.34z"></path>
                 </svg>
@@ -314,25 +318,23 @@ const page = () => {
             textStyles="text-center"
           />
 
-          <div
-            className="flex justify-center lg:flex-row flex-col content-center">
+          <div className="flex justify-center lg:flex-row flex-col content-center">
             {trackdata1.map(trackscard)}
           </div>
-          <div
-            className="flex justify-center lg:flex-row flex-col content-center">
+          <div className="flex justify-center lg:flex-row flex-col content-center">
             {trackdata2.map((cd, index) => {
-                    return (
-                      <motion.div 
-                        variants={fadeIn("up", "tween", 0.2, 1)}
-                        className="p-10 content-center lg:w-1/3" key = {`our-tracks-lower-${index}`}>
-                        <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
-                          {cd.title}
-                        </h1>
-                        <p className="text-white text-center">{cd.desc}</p>
-                      </motion.div>
-                    );
-                  }
-            )}
+              return (
+                <motion.div
+                  variants={fadeIn("up", "tween", 0.2, 1)}
+                  className="p-10 content-center lg:w-1/3"
+                  key={`our-tracks-lower-${index}`}>
+                  <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
+                    {cd.title}
+                  </h1>
+                  <p className="text-white text-center">{cd.desc}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
         <motion.div
@@ -340,12 +342,12 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container items-center pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col items-center">
+          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col content-center">
           <TitleText
             title={
               <>
                 <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
-                  Sponsers
+                  sponsors
                 </div>
                 {/* <img src="/hackEDCodeLogo.png" className=" w-[300px]" alt="" /> */}
                 {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
@@ -363,10 +365,42 @@ const page = () => {
             Sponsers
           </div> */}
           <div className="mt-10 flex justify-center pb-[50px] lg:flex-row flex-col items-center gap-10">
-            <img className="w-[200px]" src="./polygon.png" alt="polygon" />
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="w-[200px]"
+              src="./polygon.png"
+              alt="polygon"
+            />
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="w-[200px]"
+              src="./replit.png"
+              alt="replit"
+            />
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="w-[200px]"
+              src="./solana.png"
+              alt="solana"
+            />
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="w-[200px]"
+              src="./filecoin.png"
+              alt="filecoin"
+            />
+            {/* <img className="w-[200px]" src="./polygon.png" alt="polygon" />
             <img className="w-[200px]" src="./replit.png" alt="replit" />
             <img className="w-[200px]" src="./solana.png" alt="solana" />
-            <img className="w-[200px]" src="./filecoin.png" alt="filecoin" />
+            <img className="w-[200px]" src="./filecoin.png" alt="filecoin" /> */}
           </div>
         </motion.div>
         <TitleText

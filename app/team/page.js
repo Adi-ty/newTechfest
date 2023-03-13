@@ -105,7 +105,8 @@ const teamMembers3 = [
     instaLink: "https://instagram.com/aryan_khandelwal_2003?igshid=ZDdkNTZiNTM",
     twitterLink: "#",
     githubLink: "https://www.behance.net/aryankhandelwal2",
-    linkedinLink: "https://www.behance.net/aryankhandelwal2",
+    linkedinLink:
+      "https://www.linkedin.com/in/aryan-khandelwal-b7a209228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiXuuROgiQgaRSbEbQbt6TA%3D%3D",
   },
 ];
 
@@ -122,7 +123,7 @@ const coreOrgData1 = [
   },
   {
     image: "/tanishqa.jpg",
-    name: "Tanisqa Bansal",
+    name: "Tanishqa Bansal",
     post: "Student Representative",
     org: "USAR",
     instaLink: "https://www.instagram.com/ich_tanishqa/",
@@ -191,7 +192,7 @@ const Team = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-twitter">
-                <AiOutlineTwitter />
+                <AiOutlineGithub />
               </i>
             </a>
           </li>
@@ -205,7 +206,7 @@ const Team = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-codepen">
-                <AiOutlineGithub />
+                <AiOutlineTwitter />
               </i>
             </a>
           </li>
@@ -239,7 +240,7 @@ const Team = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-twitter">
-                <AiOutlineTwitter />
+                <BsBehance />
               </i>
             </a>
           </li>
@@ -253,7 +254,7 @@ const Team = () => {
           <li>
             <a href={card.githubLink}>
               <i className="fa fa-codepen">
-                <BsBehance />
+                <AiOutlineTwitter />
               </i>
             </a>
           </li>
