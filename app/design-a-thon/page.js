@@ -16,14 +16,28 @@ const trackdata1 = [
   {
     title: "UI/UX",
     desc: "This will help students to adapt the process of creating a website application that delivers a seamless User Experience and meets user's core needs with a clear, compelling User Unterface.",
+    title: "Ui/Ux",
+    desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
   },
   {
     title: "PRODUCT DESIGN",
     desc: "Product Design describes the process of imagining, creating, and iterating products that solve the problems of user or address specific needs in a given market.",
+    title: "Product Design",
+    desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
   },
   {
     title: "GAME DESIGN",
     desc: "The process of creating and shaping the mechanics, systems, and rules of a game. Games can be created for entertainment, education, exercise, or experimental purposes.",
+    title: "Game Design",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
+  },
+  {
+    title: "Interior/Furniture Design",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
+  },
+  {
+    title: "Re-imagining medicine",
+    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
   },
 ];
 

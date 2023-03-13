@@ -285,7 +285,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container items-center pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row items-center">
+          className="container items-center pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col items-center">
           <TitleText
             title={
               <>
@@ -316,6 +316,15 @@ const page = () => {
             {trackdata2.map(trackscard)}
           </div>
         </motion.div>
+        <div className="text-white font-bold text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
+                Sponsers
+              </div>
+        <div className="my-10 sm:flex-col flex justify-center items-center gap-10">
+        <img src="./polygon.png" alt="polygon" />
+        <img className="w-[200px]" src="./replit.png" alt="replit" />
+        <img className="w-[200px]" src="./solana.png" alt="solana"/>
+        <img className="w-[200px]" src="./filecoin.png" alt="filecoin" />
+        </div>
         <TitleText
           title={
             <>
