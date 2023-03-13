@@ -284,7 +284,7 @@ const page = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
               className="animate relative rounded-2xl"
-              src="/hacki.png"
+              src="/hackathonnn.png"
               alt=""
             />
           </motion.div>
@@ -325,15 +325,40 @@ const page = () => {
             )}
           </div>
         </motion.div>
-        <div className="text-white font-bold text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
-                Sponsers
-              </div>
-        <div className="my-10 sm:flex-col flex justify-center items-center gap-10">
-        <img src="./polygon.png" alt="polygon" />
-        <img className="w-[200px]" src="./replit.png" alt="replit" />
-        <img className="w-[200px]" src="./solana.png" alt="solana"/>
-        <img className="w-[200px]" src="./filecoin.png" alt="filecoin" />
-        </div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="container items-center pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col items-center">
+          <TitleText
+            title={
+              <>
+                <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
+                  Sponsers
+                </div>
+                {/* <img src="/hackEDCodeLogo.png" className=" w-[300px]" alt="" /> */}
+                {/* <div className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+                    hack
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+                      EDC
+                    </span>
+                    ode
+                  </div> */}
+              </>
+            }
+            textStyles="text-center"
+          />
+          {/* <div className="text-white font-bold text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
+            Sponsers
+          </div> */}
+          <div className="mt-10 flex justify-center pb-[50px] lg:flex-row flex-col items-center gap-10">
+            <img className="w-[200px]" src="./polygon.png" alt="polygon" />
+            <img className="w-[200px]" src="./replit.png" alt="replit" />
+            <img className="w-[200px]" src="./solana.png" alt="solana" />
+            <img className="w-[200px]" src="./filecoin.png" alt="filecoin" />
+          </div>
+        </motion.div>
         <TitleText
           title={
             <>
@@ -349,7 +374,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          className="mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {mentorsData1.map(mentorCards)}
         </motion.div>
         <motion.div
