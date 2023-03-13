@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from "../../components/CustomTexts";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsBehance } from "react-icons/bs";
 import {
   AiOutlineTwitter,
   AiFillLinkedin,
@@ -92,20 +92,20 @@ const teamMembers3 = [
     name: "Nidhi Khana",
     post: "UI/UX Team",
     org: "USDI",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://instagram.com/_nidhi.khanna?igshid=ZDdkNTZiNTM=",
+    twitterLink: "#",
+    githubLink: "https://www.behance.net/nidhikhanna5",
+    linkedinLink: "https://www.linkedin.com/in/nidhi-khanna-651a36259",
   },
   {
     image: "/aryan.jpg",
     name: "Aryan Khandelwal",
     post: "UI/UX Team",
     org: "USDI",
-    instaLink: "https://www.instagram.com/ayuugoyal/",
-    twitterLink: "https://twitter.com/NotSoShubhhh",
-    githubLink: "https://github.com/shubhsardana29",
-    linkedinLink: "https://www.linkedin.com/in/ayuugoyal/",
+    instaLink: "https://instagram.com/aryan_khandelwal_2003?igshid=ZDdkNTZiNTM",
+    twitterLink: "#",
+    githubLink: "https://www.behance.net/aryankhandelwal2",
+    linkedinLink: "https://www.behance.net/aryankhandelwal2",
   },
 ];
 
@@ -173,8 +173,7 @@ const Team = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         key={index}
-        className="card z-20"
-      >
+        className="card z-20">
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
         <div className="post">{card.post}</div>
@@ -214,6 +213,54 @@ const Team = () => {
       </motion.div>
     );
   };
+  const renderCards2 = (card, index) => {
+    return (
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        key={index}
+        className="card z-20">
+        <img src={card.image} alt="Person" className="card__image" />
+        <p className="card__name">{card.name}</p>
+        <div className="post">{card.post}</div>
+        {/* <div className="grid-container"> */}
+        <div className="post">{card.org}</div>
+        {/* </div> */}
+        <ul className="social-icons">
+          <li>
+            <a href={card.instaLink}>
+              <i className="fa fa-instagram">
+                <BsInstagram />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href={card.githubLink}>
+              <i className="fa fa-twitter">
+                <AiOutlineTwitter />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href={card.linkedinLink}>
+              <i className="fa fa-linkedin">
+                <AiFillLinkedin />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href={card.githubLink}>
+              <i className="fa fa-codepen">
+                <BsBehance />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </motion.div>
+    );
+  };
 
   return (
     <>
@@ -233,8 +280,7 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
-        >
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {teamMembers1.map(renderCards)}
         </motion.div>
         <motion.div
@@ -242,8 +288,7 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
-        >
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {teamMembers2.map(renderCards)}
         </motion.div>
         <TitleText
@@ -261,9 +306,8 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
-        >
-          {teamMembers3.map(renderCards)}
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
+          {teamMembers3.map(renderCards2)}
         </motion.div>
       </div>
       <div>
@@ -282,8 +326,7 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
-        >
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {coreOrgData1.map(renderCards)}
         </motion.div>
         <motion.div
@@ -291,8 +334,7 @@ const Team = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5"
-        >
+          className=" mt-10 flex justify-center lg:flex-row flex-col items-center gap-5">
           {coreOrgData2.map(renderCards)}
         </motion.div>
       </div>

@@ -82,19 +82,23 @@
 .countdown .wrapper::before {
   top: 0;
   height: 100%;
-  background-image: linear-gradient(to top,
-      transparent 46%,
-      rgba(12, 13, 19, 0.5) 68%,
-      rgba(12, 13, 19) 97%);
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
 }
 
 .countdown .wrapper::after {
   bottom: 0;
   opacity: 1;
-  background-image: linear-gradient(to bottom,
-      transparent 46%,
-      rgba(12, 13, 19, 0.5) 68%,
-      rgba(12, 13, 19) 97%);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
 }
 
 .countdown .card:hover .wrapper::before,
@@ -127,14 +131,14 @@
 }
 
 .timer-inner {
-  background-image: url('https://i.gifer.com/UEsS.gif');
+  /* background-image: url('https://i.gifer.com/UEsS.gif'); */
+  background-color: #7e5231;
   background-repeat: no-repeat;
   color: #ffffffe8;
   display: flex;
   border: solid 2px #46016831;
   padding: 1rem;
   border-radius: 60px;
-  
 }
 .timer-segment {
   display: flex;
@@ -154,5 +158,3 @@
 .label {
   font-size: 1.5rem;
 }
-
-

@@ -134,25 +134,25 @@ const mentorsData3 = [
 const trackdata1 = [
   {
     title: "WEB 3.0",
-    desc: "Concept for a new version of the World Wide Web that incorporates decentralisation, blockchain technologies, and token-based economics.",
+    desc: "The proposed idea is to create a novel version of the World Wide Web that integrates decentralization, blockchain technologies, and token-based economics.",
   },
   {
     title: "OPEN INNOVATION",
-    desc: "Integrates internal and external concepts to create architectures and systems whose specifications are established by a business model.",
+    desc: "The process combines both internal and external concepts to construct architectures and systems, whose specifications are determined by a business model.",
   },
   {
     title: "AI/ML",
-    desc: "The capacity of a machine to replicate intelligent human behaviour is referred to as machine learning in the field of artificial intelligence.",
+    desc: "In the realm of artificial intelligence, the ability of a machine to imitate intelligent human actions is known as machine learning.",
   },
 ];
 const trackdata2 = [
   {
-    title: "Web 3.0",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    title: "IOT",
+    desc: "The IoT track of the hackathon invites participants to creatively use data from IoT devices and sensors to build smart, connected applications that have the potential to enhance the quality of life for individuals, communities, and businesses.",
   },
   {
-    title: "Web 3.0",
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur optio unde saepe aliquam nesciunt illum ex? Quod voluptatem autem delectus quae sint, saepe porro cumque dolorum. Quos, atque harum!",
+    title: "UTILITY",
+    desc: "This Track involves identifying methods to integrate a product into the customer's daily routine by emphasizing how it can fulfill their requirements by providing a solution to a problem.",
   },
 ];
 const page = () => {
@@ -248,10 +248,13 @@ const page = () => {
             <motion.p
               variants={fadeIn("up", "tween", 0.2, 1)}
               className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              consectetur optio unde saepe aliquam nesciunt illum ex? Quod
-              voluptatem autem delectus quae sint, saepe porro cumque dolorum.
-              Quos, atque harum!
+              HackEDCode is designed to foster a professional and engaging
+              environment that encourages creativity, collaboration, and
+              knowledge sharing. Our focus is on developing cutting-edge
+              solutions that push the boundaries of what is possible in the
+              world of technology. Participants will have access to the latest
+              tools and technologies, allowing them to build high-quality
+              projects that address real-world problems.
             </motion.p>
             <div className="flex items-center justify-center pt-4 ">
               <button
@@ -317,7 +320,7 @@ const page = () => {
           title={
             <>
               <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
-                hackEDCode Orgainzers
+                Mentors
               </div>
             </>
           }

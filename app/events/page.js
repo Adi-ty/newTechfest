@@ -6,7 +6,7 @@ import CountdownTimer from "./CountdownTimer";
 const page = () => {
   const upcomingEv = [
     {
-      image1: "../AI_Event.jpg",
+      image1: "../abcd.png",
       image2: "comingsoon.png",
       title: "",
       desc: "Description",
