@@ -47,8 +47,7 @@ const page = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         key={index}
-        className="card"
-      >
+        className="card">
         <img src={card.image} alt="Person" className="card__image" />
         <p className="card__name">{card.name}</p>
         <div className="post">{card.post}</div>
@@ -98,8 +97,7 @@ const page = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden "
-          >
+            className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden ">
             <TitleText
               title={
                 <>
@@ -121,18 +119,16 @@ const page = () => {
             />
             <motion.p
               variants={fadeIn("up", "tween", 0.2, 1)}
-              className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left "
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              consectetur optio unde saepe aliquam nesciunt illum ex? Quod
-              voluptatem autem delectus quae sint, saepe porro cumque dolorum.
-              Quos, atque harum!
+              className="text-white leading-normal text-base md:text-2xl mb-8 text-center md:text-left ">
+              A design hackathon is an event where design students and
+              professionals come together to create novel solutions to various
+              design problems and challenges in the design industry. These
+              events are usually short-term, taking place over a day or two.
             </motion.p>
             <div className="flex items-center justify-center pt-4 ">
               <button
                 className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                type="button"
-              >
+                type="button">
                 Register Here
               </button>
             </div>
@@ -142,8 +138,7 @@ const page = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className="w-full xl:w-2/5 p-10 overflow-hidden"
-          >
+            className="w-full xl:w-2/5 p-10 overflow-hidden">
             <motion.img
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -159,8 +154,7 @@ const page = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row items-center"
-        >
+          className="container pl-20 pr-20 mx-auto flex justify-center flex-wrap flex-col md:flex-row items-center">
           <TitleText
             title={
               <>
@@ -178,8 +172,7 @@ const page = () => {
               display: "flex",
               justifyContent: "center",
               // paddingTop: "10vh",
-            }}
-          >
+            }}>
             {trackdata1.map(trackscard)}
           </div>
         </motion.div>
