@@ -13,8 +13,8 @@ const About = () => (
     <motion.div
       variants={staggerContainer}
       viewport={{ once: false, amount: 0.25 }}
-      className={`flex-col pt-2 p-8 pb-3 backdrop-grayscale rounded-2xl`}>
-      <TypingText title="| Elysian" textStyles="text-center" />
+      className={`flex-col p-8 backdrop-grayscale rounded-2xl`}>
+      <TypingText title="About | Elysian" textStyles="text-center text-5xl" />
 
       {/* </motion.div> */}
 
