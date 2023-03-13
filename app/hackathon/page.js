@@ -164,12 +164,14 @@ const openInNewTab = (url) => {
 const page = () => {
   const trackscard = (cd, index) => {
     return (
-      <div className="p-10 content-center">
+      <motion.div 
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="p-10 content-center">
         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
           {cd.title}
         </h1>
         <p className="text-white text-center">{cd.desc}</p>
-      </div>
+      </motion.div>
     );
   };
 
@@ -320,12 +322,14 @@ const page = () => {
             className="flex justify-center lg:flex-row flex-col content-center">
             {trackdata2.map((cd, index) => {
                     return (
-                      <div className="p-10 content-center lg:w-1/3" key = {`our-tracks-lower-${index}`}>
+                      <motion.div 
+                        variants={fadeIn("up", "tween", 0.2, 1)}
+                        className="p-10 content-center lg:w-1/3" key = {`our-tracks-lower-${index}`}>
                         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
                           {cd.title}
                         </h1>
                         <p className="text-white text-center">{cd.desc}</p>
-                      </div>
+                      </motion.div>
                     );
                   }
             )}

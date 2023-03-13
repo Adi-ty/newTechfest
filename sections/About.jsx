@@ -55,20 +55,18 @@ const About = () => (
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="w-full p-10 overflow-hidden flex gap-5">
-        <div className="w-1/4">
+        className="w-full p-10 overflow-hidden flex gap-5 max-lg:flex-col content-center">
           <motion.img
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="animate relative rounded-2xl w-[500px] h-[400px]"
+            className="animate relative rounded-2xl lg:w-1/4 lg:h-1/5"
             src="/campus.jpg"
             alt=""
           />
-        </div>
         <motion.div
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="mt-[4px] w-3/4 font-normal sm:text-[22px] text-[20px] text-center text-secondary-white ">
+          className="mt-[4px] lg:w-3/4 font-normal sm:text-[22px] text-[20px] text-center text-secondary-white ">
           <span className="font-extrabold text-white">Elysian</span>
           The East Campus, GGSIPU is enthralled to host its first-ever annual
           Des-Tech fest (ELYSIAN'23) on 27th- 28th March 2023 at its very own

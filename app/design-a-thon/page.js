@@ -36,12 +36,14 @@ const trackdata1 = [
 const page = () => {
   const trackscard = (cd, index) => {
     return (
-      <div className="p-10 content-center">
+      <motion.div 
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="p-10 content-center">
         <h1 className="text-white text-2xl font-semi-bold pb-2 lg: text-center">
           {cd.title}
         </h1>
         <p className="text-white text-center">{cd.desc}</p>
-      </div>
+      </motion.div>
     );
   };
 
