@@ -199,7 +199,7 @@ const page = () => {
             </a>
           </li>
           <li>
-            <a href={card.githubLink}>
+            <a href={card.twitterLink}>
               <i className="fa fa-twitter">
                 <AiOutlineTwitter />
               </i>
