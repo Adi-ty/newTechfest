@@ -306,7 +306,7 @@ const page = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
               className="animate relative rounded-2xl"
-              src="/posterhaka.png"
+              src="/posterHaka.png"
               alt=""
             />
           </motion.div>
