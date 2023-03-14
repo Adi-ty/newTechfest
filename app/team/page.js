@@ -114,7 +114,7 @@ const coreOrgData1 = [
   {
     image: "/abhishek.jpg",
     name: "Abhishek Garg",
-    post: "Student Representative",
+    post: "School Representative",
     org: "USAR",
     instaLink: "https://www.instagram.com/abhishekk.garg/",
     twitterLink: "#",
@@ -124,7 +124,7 @@ const coreOrgData1 = [
   {
     image: "/tanishqa.jpg",
     name: "Tanishqa Bansal",
-    post: "Student Representative",
+    post: "School Representative",
     org: "USAR",
     instaLink: "https://www.instagram.com/ich_tanishqa/",
     twitterLink: "#",
@@ -134,7 +134,7 @@ const coreOrgData1 = [
   {
     image: "/raj.jpg",
     name: "Raj Jaiswal",
-    post: "Aca. Student Representative",
+    post: "Aca. School Representative",
     org: "USAR",
     instaLink: "#",
     twitterLink: "#",
@@ -146,7 +146,7 @@ const coreOrgData2 = [
   {
     image: "/nidhi.jpg",
     name: "Nidhi",
-    post: "Student Representative",
+    post: "School Representative",
     org: "USDI",
     instaLink: "https://www.instagram.com/_cute_quail/",
     twitterLink: "https://twitter.com/anni0428?t=mpqpL6EGv1Bs8DVCyqLJEg&s=08",
@@ -156,7 +156,7 @@ const coreOrgData2 = [
   {
     image: "/default.png",
     name: "Sanya",
-    post: "Student Representative",
+    post: "School Representative",
     org: "USDI",
     instaLink: "#",
     twitterLink: "#",
