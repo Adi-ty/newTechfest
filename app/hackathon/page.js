@@ -103,7 +103,7 @@ const mentorsData3 = [
     image: "/tanishka.jpg",
     name: "Taniska Jha",
     post: "Full Stack Developer",
-    org: "SDC",
+    org: "SDC USS",
     instaLink: "https://www.instagram.com/taniska_._jha/",
     twitterLink: "https://twitter.com/Taniska_Jha",
     githubLink: "https://github.com/TaniskaJha",
@@ -128,6 +128,16 @@ const mentorsData3 = [
     twitterLink: "#",
     githubLink: "https://github.com/Chaitanyarai899",
     linkedinLink: "https://www.linkedin.com/in/chaitanya-rai-369881102/",
+  },
+  {
+    image: "/aman.jpg",
+    name: "Aman Sharma",
+    post: "Full Stack Developer",
+    org: "USAR",
+    instaLink: "https://www.instagram.com/a.dot31",
+    twitterLink: "https://twitter.com/lunchspider",
+    githubLink: "https://github.com/lunchspider",
+    linkedinLink: "https://www.linkedin.com/in/aman-sharma-96b508238",
   },
 ];
 
