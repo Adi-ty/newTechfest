@@ -15,7 +15,7 @@ const Page = () => {
     const timeoutId = setTimeout(() => {
       gif.style.display = "none";
       setShowOtherComponents(true);
-    }, 8000);
+    }, 5000);
 
     return () => {
       clearTimeout(timeoutId);
