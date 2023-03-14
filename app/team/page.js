@@ -154,7 +154,7 @@ const coreOrgData2 = [
     linkedinLink: "https://www.linkedin.com/in/nidhi-jha-29aa27265/",
   },
   {
-    image: "/default.png",
+    image: "/sanya.jpg",
     name: "Sanya",
     post: "School Representative",
     org: "USDI",
