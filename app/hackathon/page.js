@@ -306,7 +306,7 @@ const page = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
               className="animate relative rounded-2xl"
-              src="/posterhanka.svg"
+              src="/posterhaka.png"
               alt=""
             />
           </motion.div>
@@ -417,7 +417,7 @@ const page = () => {
           title={
             <>
               <div className="text-white text-4xl font-semi-bold pb-8 lg:pb-6 text-center">
-                Mentors
+                hackEDCode Organizers
               </div>
             </>
           }
