@@ -10,11 +10,15 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-image: url("/bg.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .gradient-01 {
@@ -116,34 +120,32 @@ body{
 /* Navbar */
 
 @font-face {
-  font-family: 'Iceland', cursive;
-  src: url('../public/font/Iceland-Regular.ttf');
+  font-family: "Iceland", cursive;
+  src: url("../public/font/Iceland-Regular.ttf");
   /* font-weight: 400;
   font-style: normal; */
-  }
-
-.fest-name{
-  background: linear-gradient(90.9deg, #00E0FF 7.88%, #0A4399 98.61%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-shadow: 7px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.cllg{
-transform: rotate(-90deg);
-color: #fff;
-font-weight: 800;
+.fest-name {
+  background: linear-gradient(90.9deg, #00e0ff 7.88%, #0a4399 98.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 7px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.edc{
-  text-shadow: -1px 1px 0 #fff,
-                          1px 1px 0 #fff,
-                         1px -1px 0 #fff,
-                        -1px -1px 0 #fff;
-transform: rotate(-90deg);
-color: #29053B;
-font-family: 'Iceland';
+.cllg {
+  transform: rotate(-90deg);
+  color: #fff;
+  font-weight: 800;
+}
+
+.edc {
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+  transform: rotate(-90deg);
+  color: #29053b;
+  font-family: "Iceland";
 }
 
 /* About */
