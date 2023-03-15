@@ -100,7 +100,7 @@ const teamMembers3 = [
   },
   {
     image: "/nidhikhana.jpg",
-    name: "Nidhi Khana",
+    name: "Nidhi Khanna",
     post: "UI/UX Team",
     org: "USDI",
     instaLink: "https://instagram.com/_nidhi.khanna?igshid=ZDdkNTZiNTM=",
