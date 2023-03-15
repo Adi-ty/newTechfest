@@ -133,7 +133,7 @@ const mentorsData3 = [
     image: "/aman.jpg",
     name: "Aman Sharma",
     post: "Full Stack Developer",
-    org: "USAR",
+    org: "SDC USS",
     instaLink: "https://www.instagram.com/a.dot31",
     twitterLink: "https://twitter.com/lunchspider",
     githubLink: "https://github.com/lunchspider",

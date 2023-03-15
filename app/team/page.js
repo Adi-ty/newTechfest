@@ -88,17 +88,7 @@ const teamMembers2 = [
 
 const teamMembers3 = [
   {
-    image: "/nidhikhana.jpg",
-    name: "Nidhi Khana",
-    post: "UI/UX Team",
-    org: "USDI",
-    instaLink: "https://instagram.com/_nidhi.khanna?igshid=ZDdkNTZiNTM=",
-    twitterLink: "#",
-    githubLink: "https://www.behance.net/nidhikhanna5",
-    linkedinLink: "https://www.linkedin.com/in/nidhi-khanna-651a36259",
-  },
-  {
-    image: "/aryan.jpg",
+    image: "/aryan.png",
     name: "Aryan Khandelwal",
     post: "UI/UX Team",
     org: "USDI",
@@ -107,6 +97,16 @@ const teamMembers3 = [
     githubLink: "https://www.behance.net/aryankhandelwal2",
     linkedinLink:
       "https://www.linkedin.com/in/aryan-khandelwal-b7a209228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiXuuROgiQgaRSbEbQbt6TA%3D%3D",
+  },
+  {
+    image: "/nidhikhana.jpg",
+    name: "Nidhi Khana",
+    post: "UI/UX Team",
+    org: "USDI",
+    instaLink: "https://instagram.com/_nidhi.khanna?igshid=ZDdkNTZiNTM=",
+    twitterLink: "#",
+    githubLink: "https://www.behance.net/nidhikhanna5",
+    linkedinLink: "https://www.linkedin.com/in/nidhi-khanna-651a36259",
   },
 ];
 
@@ -204,7 +204,7 @@ const Team = () => {
             </a>
           </li>
           <li>
-            <a href={card.githubLink}>
+            <a href={card.twitterLink}>
               <i className="fa fa-codepen">
                 <AiOutlineTwitter />
               </i>
@@ -252,7 +252,7 @@ const Team = () => {
             </a>
           </li>
           <li>
-            <a href={card.githubLink}>
+            <a href={card.twitterLink}>
               <i className="fa fa-codepen">
                 <AiOutlineTwitter />
               </i>
